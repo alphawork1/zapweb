@@ -9,7 +9,8 @@ Application.config({
 	
 	model: {
 		// 'url': 'http://zapservice.siempresistemas.info'
-		'url': 'http://localhost:5921'
+		// 'url': 'http://localhost:5921'
+        url: ''
 	},
 
     ajax: {

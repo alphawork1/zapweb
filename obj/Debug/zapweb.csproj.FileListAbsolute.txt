@@ -41,3 +41,5 @@ G:\LocalHost\alphawork\zapweb\api\zapweb\bin\System.Net.Http.dll
 G:\LocalHost\alphawork\zapweb\api\zapweb\bin\System.Net.Http.WebRequest.xml
 G:\LocalHost\alphawork\zapweb\api\zapweb\bin\System.Net.Http.xml
 G:\LocalHost\alphawork\zapweb\api\zapweb\bin\MySql.Data.dll
+G:\LocalHost\alphawork\zapweb\obj\Debug\zapweb.dll
+G:\LocalHost\alphawork\zapweb\obj\Debug\zapweb.pdb
