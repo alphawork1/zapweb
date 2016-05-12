@@ -1,0 +1,22 @@
+.relatorio-popup-mes-list{
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	list-style-type: none;	
+}
+
+.relatorio-popup-mes-item{
+	padding: 3px 20px;
+    border: 1px solid #fff;
+}
+
+.relatorio-popup-mes-item:hover{	
+    background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+	cursor: pointer; 
+}
+
+.relatorio-popup-mes-item span{
+	display: inline-block;
+	margin-left: 10px;
+	min-width: 20px;
+}

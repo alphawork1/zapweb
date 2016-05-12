@@ -1,0 +1,96 @@
+.condominio-print-content{
+	page-break-after: always;
+}
+
+.header-logo{
+	margin-left: 20px;
+}
+
+.impressao-table {
+	border: 1px solid #ccc;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.impressao-table-padrao {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.impressao-table-logo{
+	width: 200px;
+}
+
+.impressao-table-title {
+	font-family: "Arial";
+	text-align: center
+}
+
+.impressao-table-title ul li {
+	list-style-type: none;
+}
+
+.impressao-table-title-1 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 36px;
+}
+
+.impressao-table-title-2 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.impressao-table-title-3 {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.impressao-table-classificacao {
+	font-size: 9px;
+}
+
+.impressao-table-classificacao ul li  {
+	list-style-type:none;
+}
+
+.impressao-table-classificacao-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.impressao-table-title-ul {
+	margin-top: 45px;
+}
+
+.impressao-table-title-li {
+	display: inline-block;
+}
+
+.impressao-table-title-li ul li {
+	font-size: 7px;
+}
+
+.impressao-table-conteudo-tr-1 {
+	padding: 15px;
+	font-family: "Arial"
+}
+
+.impressao-table-conteudo-tr-1 td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.impressao-table-conteudo-tr-2 {
+	font-family: "Arial"
+}
+
+.impressao-table-conteudo-tr-2 td {
+	padding: 10px;
+	border: 1px solid #ccc;
+	font-size: 10px;
+}

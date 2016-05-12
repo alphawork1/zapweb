@@ -1,0 +1,42 @@
+﻿<div class="relatorio-page">
+
+    <div class="relatorio-page-pagina">
+
+        <div class="relatorio-page-header">
+            
+            <div class="relatorio-page-dados">
+                <h3 class="relatorio-page-usuario-nome" at="nomeUsuario"></h3>
+                <h4 class="relatorio-page-unidade-nome" at="nomeUnidadeCurrent"></h4>
+                <h4 class="relatorio-page-unidade-nome" at="labelZap"> <b style="color: #ff0000">ZAP</b> - Pragas</h4>
+                <div class="relatorio-page-data-time">EMISSÃO EM: <span at="datahora"></span></div>
+            </div>
+
+            <img at="logo" class="relatorio-page-img" />
+
+            <div class="relatorio-page-faixas">
+                <div class="relatorio-page-faixas-espessa">
+                    <span at="nomeRelatorio" class="relatorio-page-nome-relatorio"></span> — 
+                    <span at="nomeUnidade" class="relatorio-page-unidade-selecionada"></span>
+                </div>
+                <div class="relatorio-page-faixas-media"></div>
+                <div class="relatorio-page-faixas-fina"></div>
+            </div>
+
+        </div>
+
+        <div at="body" class="relatorio-page-body">
+            @{body}
+        </div>
+
+    </div>
+
+    <div>
+        <div at="popupMes"></div>
+        <div at="popupAno"></div>
+    </div>
+
+    <div at="modal"></div>
+    
+    <div at="statusBar" class="not-print"></div>
+
+</div>

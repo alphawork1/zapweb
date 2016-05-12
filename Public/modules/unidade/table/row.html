@@ -1,0 +1,18 @@
+﻿<tr>
+    <td>
+        @{unidade.Id}
+    </td>
+    <td>
+        <span class="label @{this.label[this.unidade.Tipo]}">@{unidade.getTipoNome()}</span>
+    </td>
+    <td>
+        @{unidade.Nome}
+    </td>
+    <td>
+        @{unidade.Cidade.getNomeWithEstado()}
+    </td>
+    <td>
+        <div at="excluir" class="unidade-table-row-button unidade-table-hide"></div>
+        <div at="editar" class="unidade-table-row-button unidade-table-hide"></div>
+    </td>
+</tr>

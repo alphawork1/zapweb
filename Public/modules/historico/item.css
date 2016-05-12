@@ -1,0 +1,15 @@
+﻿.historico-painel-item {
+    background-color: #fff;
+    padding: 7px 10px;
+    margin: 2px;
+}
+
+.historico-painel-label-data {
+    float: right;
+    color: #bbb;
+}
+
+.historico-painel-label-data,
+.historico-painel-label-descricao {
+    display: inline-block;
+}

@@ -1,0 +1,28 @@
+﻿.ui-menudown-item{
+	padding: 7px 20px  !important;
+	cursor: pointer;
+	color: #444;
+    min-width: 130px;
+    border: 1px solid #fff;
+}
+
+.ui-menudown-item:hover,
+.ui-menudown-item.selected{
+	background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+}
+
+.ui-menudown-separator {
+    display: block;
+    border-top: 1px solid #f0f0f0;
+    height: 1px;
+    margin: 2px 0px 1px 0px;
+}
+
+.ui-menudown-item-leftIcon {
+    margin-right: 5px;
+}
+
+.ui-menudown-item-rightIcon {
+
+}

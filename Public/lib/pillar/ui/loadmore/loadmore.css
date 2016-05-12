@@ -1,0 +1,14 @@
+.ui-load-more{
+	text-align: center;
+	font-size: 15px;
+}
+
+.ui-load-more:hover{
+	cursor: pointer;
+}
+
+.ui-load-more i{
+	position: relative;
+	top: 2px;
+	margin-right: 7px;
+}

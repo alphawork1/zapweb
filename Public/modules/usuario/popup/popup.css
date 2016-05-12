@@ -1,0 +1,22 @@
+﻿.usuario-popup {
+    color: #444;
+    padding: 10px;
+}
+
+.usuario-popup-img {
+    width: 96px;
+    max-height: 80px;
+}
+
+.usuario-popup-table {
+    width: 100%;
+}
+
+.usuario-popup-button {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.usuario-popup-button:hover {
+    text-decoration: underline;
+}

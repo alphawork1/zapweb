@@ -1,0 +1,16 @@
+.financeiro-despesa-search-page{
+    min-height: 1000px;
+}
+
+.financeiro-despesa-search-table{
+    width: 100%;
+}
+
+.financeiro-despesa-search-table tr{
+    padding: 10px;
+}
+
+.financeiro-despesa-search-table tr td{
+    padding: 4px;
+}
+

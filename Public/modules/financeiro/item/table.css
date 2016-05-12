@@ -1,0 +1,20 @@
+﻿.financeiro-table {
+    /*border: 5px solid  #d7ebf8;*/
+}
+
+.financeiro-table th {
+    padding: 5px;
+    background-color: #d7ebf8;
+}
+
+.financeiro-item-total {
+    width: 300px;
+    float: right;
+    margin-right: 221px;
+    background-color: #f0f0f0;
+    padding: 8px 12px 10px 20px;
+}
+
+.financeiro-item-total-table {
+    width: 100%;
+}

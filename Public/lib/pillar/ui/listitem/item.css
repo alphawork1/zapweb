@@ -1,0 +1,29 @@
+﻿.ui-list-item {
+    position: relative;
+    color: #777;
+}
+
+.ui-list-item {
+    position: relative;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    user-select:none;
+}
+
+.ui-list-item:hover {
+    background-color: #fafafa;
+}
+
+.ui-list-item:last-child {
+    border-bottom: none;
+}
+
+.ui-list-item:active{
+	-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0, 0.05) !important;
+	box-shadow: inset 0 2px 2px rgba(0,0,0, 0.05) !important;
+}
+
+.ui-list-item.selected {
+    background-color: #eee;
+}

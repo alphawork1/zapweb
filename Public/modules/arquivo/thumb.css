@@ -1,0 +1,45 @@
+﻿.anexo-thumb {
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+    margin-top: 16px;
+    max-width: 128px;
+}
+
+.anexo-thumb img{
+    display: block;
+    margin: auto;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.anexo-thumb-image {
+    display: block;
+    height: 170px;
+    padding: 3px;
+    margin: auto 10px;
+    margin-left: 0px;
+    /*box-shadow: 0 0px 3px 0 rgba(0, 0, 0, .7);*/
+    width: 191px;
+    border: 2px solid #eee;
+} 
+
+.anexo-thumb-image:hover{
+    border: 2px solid #3fb6f2;
+}
+
+.anexo-thumb-label {
+    text-align: center;
+    font-weight: bold;
+}
+
+.anexo-thumb:active {
+    /*transform: scale(0.98);*/
+}
+
+.anexo-thumb-modal {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 0px 10px;
+}

@@ -1,0 +1,103 @@
+﻿.ui-menu{
+    display: inline-block;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+ui-menu-nome .badge {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: -5px;
+    background-color: #dc0d17;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#fa3c45), to(#dc0d17));
+    background-image: -webkit-linear-gradient(#fa3c45, #dc0d17);
+    color: #fff;
+    min-height: 13px;
+    padding: 1px 3px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .7);
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    transition: background 0.5s ease;
+}
+
+.ui-menu-closed:hover{
+	background-color: #0D6AA9;
+	border-color: #0D6AA9;
+}
+
+.ui-menu-opened:hover{
+	background-color: #fff !important;	
+    border-color: #fff !important;
+}
+
+.ui-menu-nome{
+    display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 6px 8px 6px 8px;
+	margin-bottom: 1px;
+	border: 1px solid transparent;
+	position: relative;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ui-menu-opened .ui-menu-nome{
+    cursor: pointer;
+	background: #fff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.2);
+	border-bottom: none;
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	color: black;
+	z-index: 1001 !important;
+}
+
+.ui-menu-closed .ui-menu-border-white{
+    display: none;
+}
+
+.ui-menu-opened .ui-menu-border-white{
+    display: block !important;
+}
+
+.ui-menu-border-white{
+    height: 8px;
+    margin-top: 4px;
+    display: block;
+    left: 0px;
+    right: 0px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1005;
+}
+
+.ui-menu-items {        
+    position: absolute;
+	padding: 5px 0px 2px 0px;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.2);
+	border-bottom: none;
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	color: black;	
+	background-color: #fff;
+    z-index: 3;
+    padding-bottom: 5px;
+}
+
+.ui-menu-opened .ui-menu-items{
+    display: block !important;
+}
+
+.ui-menu-closed .ui-menu-items{
+    display: none;
+}

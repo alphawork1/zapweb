@@ -1,0 +1,39 @@
+﻿body {
+    /*background-color: #f7f7f7;*/
+}
+
+.auth-page-center {
+    width: 360px;
+    margin: 120px auto;
+    display: block;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: white;
+    padding: 35px 0px 76px;
+    text-align: left;
+}
+
+.auth-page-center h1 {
+    padding-bottom: 5px;
+    text-align: center;
+    color: #f3746d;
+    font-size: 42px;
+}
+
+.auth-page-table {
+    width: 274px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.auth-page-table tr td{
+    padding: 5px;
+}
+
+.auth-page-info {
+    display: none;
+    background-color: #fbdbcf;
+    border: 2px solid #f3746d;
+    padding: 8px;
+}

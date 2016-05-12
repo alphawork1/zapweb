@@ -1,0 +1,18 @@
+ <ul class="relatorio-page-list financeiro-relatorio-page-centro-total-despesa-unidade">
+	<li class="relatorio-page-item">		
+		<span class="level-1">
+			<a href="#Relatorio/Despesa/Central/@{unidadeId}/@{mes}/@{ano}">
+				TOTAL DE DESPESA DO @{nomeUnidade}
+			</a>
+		</span>
+		<span>
+			R$ <span at="resumoTotalReceita">@{totalDespesa}</span>
+		</span>		
+	</li>
+</ul>
+
+<div class="financeiro-relatorio-page-centro-custos">
+	<span>UNIDADES:</span>
+</div>
+
+<ul at="list" class="relatorio-page-list" style="margin-left:50px">@{items}</ul>

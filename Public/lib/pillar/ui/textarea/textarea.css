@@ -1,0 +1,12 @@
+﻿.ui-textarea {
+
+}
+
+.ui-textarea textarea[disabled]{
+	color: #bbb;
+	background-color: #fafafa;
+}
+
+.ui-textarea-invalid{
+	border-color: #ff0000 !important;
+}

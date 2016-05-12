@@ -1,0 +1,98 @@
+<div class="app-page unidade-page row">
+
+    <div class="col-sm-1 col-sm-offset-1"></div>
+
+    <div at="pesquisa"></div>
+
+    <div class="col-sm-7">
+
+        <div at="body" class="condominio-prospectar-page-body app-page-body">
+
+            <div tabbar-container="geral" class="app-page-tab-content">
+
+                <h2 style="border: 0px; margin: 0px; color: #205980;">
+                    <div at="rating" style="float: right"></div>
+                    <div at="status" style="float: right;clear: both;width: 140px;text-align: right;"></div>
+                    
+                    <a href="" at="linkEditar"><div at="c01" pillar-data-model="Nome">Nome do condomínio</div></a>
+                    <div at="c02" pillar-data-model="Sindico.Nome" class="condominio-prospectar-sindico">Síndico</div>
+                    <div at="c03" pillar-data-model="Endereco.toInline()" class="condominio-prospectar-endereco">Endereço</div>
+                </h2>
+
+                <div class="panel-body condominio-prospectar-panel-body">
+
+                    <h5>1. Informações Cadastrais do Condomínio:</h5>
+
+                    <div class="form-group col-sm-5">
+                        <b style="color: #b9b9b9">Cadastrador:</b>
+                        <br> <span at="c04" pillar-data-model="Cadastrador">Nome do cadastrador</span>
+                    </div>
+                    <!--/form-group-->
+                    <div class="form-group col-sm-7">
+                        <b style="color: #b9b9b9">Recebedor da proposta:</b>
+                        <br> <span at="c05" pillar-data-model="Colaborador">Nome</span>
+                    </div>
+                    <!--/form-group-->
+                    <div class="form-group col-sm-5">
+                        <b style="color: #b9b9b9">Administradora:</b>
+                        <br> <span at="c06" pillar-data-model="Administradora.Nome">Nome da administradora</span>
+                    </div>
+                    <!--/form-group-->
+                    <div class="form-group col-sm-7">
+                        <b style="color: #b9b9b9">Unidade:</b>
+                        <br> <span at="c07" pillar-data-model="Unidade.Nome">Nome da unidade</span>
+                    </div>
+                    <div class="form-group col-sm-5">
+                        <b style="color: #b9b9b9">Nº de apartamentos :</b>
+                        <br> <span at="c08" pillar-data-model="QuantidadeApto">Apartamentos</span>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <b style="color: #b9b9b9">Nº de Blocos :</b>
+                        <br> <span at="c09" pillar-data-model="QuantidadeBlocos">Bloco</span>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <b style="color: #b9b9b9">Andares por blocos :</b>
+                        <br> <span at="c10" pillar-data-model="QuantidadeAndaresBloco">Andares</span>
+                    </div>
+
+                </div>
+
+                <!--/panel-body-->
+                <div class="panel-body condominio-prospectar-panel-body">
+
+                    <h5>
+                        2. Dados para Contato:
+                        <div at="historicos" style="float: right;margin-top: -10px;"></div>
+                        <div at="addContato" style="float: right;margin-top: -10px;margin-right: 5px;"></div>
+                    </h5>
+                    <div at="contato"></div>                    
+                </div>
+
+                <!--panel-body-->
+                <div class="panel-body condominio-prospectar-panel-body">
+
+                    <h5>3. Dados do Modelo:</h5>
+
+                    <div at="variavel"></div>
+                </div>
+
+
+                <!--panel-body-->
+                <div class="panel-body condominio-prospectar-panel-body">
+
+                    <h5>4. Modelo de Documentos</h4>
+                    
+                    <div at="documentos"></div>
+                    
+                </div>
+                <!--/tab geral-->
+            </div>
+            
+        </div>
+    </div>
+    
+    <div at="coptions" class="app-page-opcoes">
+        <div class="app-opcoes-button" at="pesquisar"></div>
+    </div>
+    
+</div>

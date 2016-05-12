@@ -1,0 +1,10 @@
+﻿.ui-menubar{
+	display: inline-block;
+	font: 12px arial,sans-serif;
+	color: #444;
+	position: relative;
+}
+
+.ui-menubar-menus {
+    display: inline-block;
+}

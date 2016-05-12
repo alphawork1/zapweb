@@ -1,0 +1,11 @@
+p{
+	/*display: none !important;*/
+	font: normal normal normal 12px Arial,Helvetica,Tahoma,Verdana,Sans-Serif !important;
+}
+
+.linker-tag{
+	background: linear-gradient(#dce6f8, #bdcff1);
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #a3bcea;
+    font-weight: normal;
+}

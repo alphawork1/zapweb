@@ -1,0 +1,51 @@
+﻿.ui-evidence {
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+}
+
+.ui-evidence-show {
+    opacity: 1;
+}
+
+.ui-evidence .evidence-horizontal {
+    border: 2px solid #5890ff;
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    height: 6px;    
+}
+
+.ui-evidence .evidence-top{    
+    -webkit-border-radius: 3px 3px 0 0;
+    border-bottom: none;
+    top: -1px;    
+}
+
+.ui-evidence .evidence-bottom{    
+    -webkit-border-radius: 0 0 3px 3px;
+    border-top: none;
+    bottom: -1px;
+}
+
+.ui-evidence .evidence-vertical{    
+    bottom: 5px;
+    position: absolute;
+    top: 5px;
+    width: 2px;    
+}
+
+.ui-evidence .evidence-left {
+    border-left: 2px solid #5890ff;
+    left: -1px;    
+}
+
+.ui-evidence .evidence-right{
+    border-right: 2px solid #5890ff;
+    right: -1px;
+}
+
+.ui-evidence-element {
+    transition: background-color 1.5s linear;
+}

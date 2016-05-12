@@ -1,0 +1,70 @@
+.financeiro-relatorio-page{
+
+}
+
+.financeiro-relatorio-page hr{
+	border-top-color: #aaa;
+    margin: 50px -30px;
+}
+
+.financeiro-relatorio-page-title{
+	text-align: center;
+    font: bold 12pt Times New Roman;
+	color: #222;
+	text-align: center;
+	margin-top: 27px;
+}
+
+.financeiro-relatorio-page-mes{
+	text-transform: uppercase;
+}
+
+.financeiro-relatorio-page-total-despesas{
+	margin: 50px 0px 40px;
+}
+
+.financeiro-relatorio-page-body{
+	padding: 0px 30px;
+	font: bold 12pt Times New Roman;
+	color: #222;
+}
+
+.financeiro-relatorio-page-body .level-1{
+	text-transform: uppercase;
+	font-family: Times New Roman;
+}
+
+.financeiro-relatorio-page-body .level-2{
+	padding-left: 50px
+}
+
+.financeiro-relatorio-page-body .level-3{
+	font-weight: normal;
+	padding-left: 100px
+}
+
+.financeiro-relatorio-page-body .level-4{
+	font-weight: normal;
+	font-style: italic;
+	padding-left: 150px
+}
+
+.financeiro-relatorio-page-body .level-5{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 200px;
+}
+
+.financeiro-relatorio-page-body .level-6{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 250px;
+}
+
+.financeiro-relatorio-page-body .level-7,
+.financeiro-relatorio-page-body .level-8,
+.financeiro-relatorio-page-body .level-9{
+    font-weight: normal;
+	font-style: italic;
+    padding-left: 300px;
+}

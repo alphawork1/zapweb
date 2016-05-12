@@ -1,0 +1,51 @@
+.financeiro-despesa-search-table{
+
+}
+
+.financeiro-despesa-search-table-tbl{
+    border: 2px solid #c9dff0;
+    width: 100%;
+}
+
+.financeiro-despesa-search-table-tbl .select{
+    background-color: #fcf8e3 !important;
+}
+
+.financeiro-despesa-search-table-tbl thead tr th{
+	line-height: 31px;
+	padding: 0 11px 2px;
+	font-weight: bold;
+	text-shadow: 0 1px rgba(255,255,255,0.2);
+	background: #c9dff0;
+	cursor: pointer;
+}
+
+.financeiro-despesa-search-table .empty{
+    padding: 5px;
+}
+
+.financeiro-despesa-search-table-tbl tbody tr:nth-child(even) {
+
+}
+
+.financeiro-despesa-search-table-tbl tbody tr:nth-child(odd) {
+    background: #eff5f9;
+}
+
+.financeiro-despesa-search-table-tbl thead tr th span {
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+
+.financeiro-despesa-search-table-tbl tbody tr {
+	border: 1px solid transparent;
+	margin: 1px;
+	cursor: pointer;
+}
+
+.financeiro-despesa-search-table-tbl tbody tr:hover td {
+	background-color: #f6faff;
+	border-top: 1px solid #b2d9ff !important;
+	border-bottom: 1px solid #b2d9ff !important;
+}

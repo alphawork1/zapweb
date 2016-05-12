@@ -1,0 +1,13 @@
+@media screen, print{
+
+	.financeiro-relatorio-page-centro-total-despesa-unidade{
+		margin: 40px 0px 20px;
+	    background-color: #ddd9c3 !important;
+	    padding: 4px;
+	    border-bottom: 1px solid #222 !important;
+	}
+
+	.financeiro-relatorio-page-centro-total-despesa-unidade i{
+		background-color: #ddd9c3 !important;
+	}
+}

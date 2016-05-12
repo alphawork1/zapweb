@@ -1,0 +1,218 @@
+﻿@media screen{
+
+    .relatorio-page {
+        background-color: #f9f9f9 !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen, print{
+    .relatorio-page {
+        background-color: #f9f9f9 !important;
+        padding-bottom: 50px;
+    }
+
+    .relatorio-page-pagina {
+        background-color: rgb(255, 255, 255) !important;
+        border: 0;
+        margin: 3.75pt;
+        margin-bottom: 7.5pt;
+        overflow: hidden;
+        position: relative;
+        white-space: normal;
+        -webkit-tap-highlight-color: initial;
+        width: 210mm;
+        min-height: 1123px;
+        box-shadow: 0 0 0 0.75pt #d1d1d1,0 0 3pt 0.75pt #ccc;
+        margin: auto;
+        padding: 42px 10px 60px;
+    }
+
+    .relatorio-page-header {
+        
+    }
+
+    .relatorio-page-valor-negativo{
+        color: #d7181f;
+    }
+
+    .relatorio-page-dados {
+        position: absolute;
+        right: 72px;
+        margin-top: 20px;
+    }
+
+    .relatorio-page-usuario-nome {
+        margin-top: 0px;
+        font: bold 20pt Times New Roman;
+        color: #222;
+        text-align: center
+    }
+
+    .relatorio-page-unidade-nome {
+        margin-top: 0px;
+        font: bold 18pt Times New Roman;
+        color: #222;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    .relatorio-page-img {
+        display: block;
+        margin: auto;
+        width: 145px;
+    }
+
+    .relatorio-page-data-time{
+        text-transform: uppercase;
+        color: #222;
+        margin-top: 34px;
+        font: bold 11pt Times New Roman;
+    }
+
+    .relatorio-page-faixas{
+        margin-top: 20px;
+    }
+
+    .relatorio-page-faixas-espessa{
+        background-color: #d7181f !important;
+        width: 100%;
+        padding: 8px;
+        color: #fff !important;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        font: bold 20px Arial;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .relatorio-page-faixas-media{
+        background-color: #d7181f !important;
+        width: 100%;
+        height: 12px;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .relatorio-page-faixas-fina{
+        background-color: #d7181f !important;
+        width: 100%;
+        height: 4px;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .relatorio-page-list {
+        max-width: 49em;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    .relatorio-page-item {
+        clear: both;
+        margin: 5px 0px;
+    }
+
+    .relatorio-page-item:before {
+        margin-top: 5px;
+        font-size: 10px;
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+    }
+
+    .relatorio-page-item > span:first-child {
+        padding-right: 0.33em;
+        background: #fff;
+    }
+
+    .relatorio-page-item > span + span {
+        float: right;
+        padding-left: 0.33em;
+        background: #fff;
+    }
+
+    .relatorio-page-item > i:first-child {
+        padding-right: 0.33em;
+        font-style: normal;
+    }
+
+    .relatorio-page-item > i + i {
+        float: right;
+        padding-left: 0.33em;
+        font-style: normal;
+    }
+
+    .relatorio-page-item .centro-custo-seta {
+        margin: 0px 4px;
+    }
+
+}
+
+@media print{
+
+    .relatorio-page {
+        background-color: #f9f9f9 !important;
+        padding-top: 0px !important;
+        padding-bottom: 50px;
+        margin: 0px !important;
+        position: fixed !important;
+        top: 0px !important;
+    }
+
+
+    .relatorio-page-header {
+        width: 175mm;    
+    }
+
+    .relatorio-page-img {
+        display: block;
+        margin: auto;
+        width: 145px;
+    }
+
+    .relatorio-page-pagina{
+        margin: 0px !important;
+        width: 190mm !important;
+        padding: 0px !important;
+    }
+
+    .home-page-top{
+        display: none !important;
+    }
+
+    .relatorio-page-item > span:first-child {    
+        background: #fff !important;
+    }
+
+    .relatorio-page-item > span + span {
+        background: #fff !important;
+    }
+
+    .relatorio-page-nome-relatorio,
+    .relatorio-page-unidade-selecionada{
+        color: #fff !important;
+    }
+
+    .financeiro-relatorio-page-body{
+        padding: 0px !important;
+        width: 170mm;
+    }
+
+    .not-print{
+        display: none !important;
+    }
+}
+
+@media print and (color) {
+
+   * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+   }
+   
+}

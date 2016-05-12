@@ -1,0 +1,20 @@
+﻿.ui-textarea-token {
+    position: relative;
+}
+
+.ui-textarea-token-highlighter{    
+    position: absolute;
+    width: 400px;
+    height: 54px;
+    padding: 7px 13px;
+    line-height: 20px;
+}
+
+.ui-textarea-token-highlighter-content{
+    color: transparent;
+    white-space: pre-wrap;
+}
+
+.ui-textarea-token-textarea{
+    position: relative;
+}

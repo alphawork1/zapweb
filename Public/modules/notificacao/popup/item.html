@@ -1,0 +1,7 @@
+﻿<li class="notificacao-popup-item">
+    <span class="notificacao-popup-usuario">@{PI.String.firstAndlastWord(this.notificacao.De.Nome)}</span>
+    <span class="notificacao-popup-data">@{notificacao.Data.getDateStringFromFormat('dd Mm')}</span>
+    <span class="notificacao-popup-hora">@{notificacao.Data.getDateStringFromFormat('hh:mm')}</span>
+    <div class="notificacao-popup-message">@{this.notificacao.De.Unidade.Nome}</div> 
+    <div class="notificacao-popup-message">@{notificacao.Message}</div>
+</li>

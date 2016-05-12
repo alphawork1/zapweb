@@ -1,0 +1,33 @@
+﻿.ui-textarea-token-data {    
+    position: relative !important;
+    z-index: 2 !important;
+    margin-right: 10px;
+}
+
+.ui-textarea-token-data-close{
+    background-image: url('close.png');
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+    z-index: 2;
+}
+
+.ui-textarea-token-data-close:hover {    
+    cursor: pointer;
+}
+
+.ui-textarea-token-data-metadata{
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.ui-textarea-token-data-metadata a {
+    color: #3b5998 !important;
+}
+
+.ui-textarea-token-data-metadata a:hover {
+    text-decoration: underline;
+}

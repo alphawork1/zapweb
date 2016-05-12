@@ -1,0 +1,15 @@
+<div class="condominio-search-result">
+	
+	<div at="rank" data-score="@{this.condominio.Rank}" class="condominio-search-result-rank"></div>
+	
+	<div class="condominio-search-result-nome">@{this.condominio.Nome}</div>
+	<div class="condominio-search-result-bairro">@{this.condominio.Endereco.Bairro}</div>
+	<div class="condominio-search-result-cidade">@{this.condominio.Endereco.Cidade.getNomeWithEstado()}</div>
+	
+	<div class="condominio-search-result-cmd">
+		<a href="#Condominio/Editar/@{this.condominio.Id}">Editar</a>
+		<span class="condominio-search-result-separador">· </span>
+		<a at="historico" href="javascript:void(0)">Históricos</a>
+	</div>
+	
+</div>

@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{110DB43E-618E-466D-A82A-07626728FA44}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zapweb</RootNamespace>
+    <AssemblyName>zapweb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\..\..\Cloud\Google Drive\Empresas\Alphawork\Clientes\Zap\ZapWeb\ZapWeb\bin\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.8.6\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Cloud\Google Drive\Empresas\Siempre\Softwares\Juzz Personalite\Juzz Personalite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PetaPoco, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Cloud\Dropbox\Progamacao\DotNet\PetaPoco\PetaPoco\bin\Release\v4.0\PetaPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="Pillar">
+      <HintPath>..\..\..\..\..\Cloud\Dropbox\Progamacao\DotNet\Pillar\bin\Debug\Pillar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\messages.txt" />
+    <Content Include="App_Data\referencias.txt" />
+    <Content Include="packages.config" />
+    <Content Include="App_Data\config.ini" />
+    <Content Include="App_Data\session.csv" />
+    <Content Include="Mvc\Views\Home\Index.cshtml" />
+    <Content Include="Mvc\Views\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\DataBaseParam.cs" />
+    <Compile Include="Lib\File.cs" />
+    <Compile Include="Lib\Filters\IsAuthenticate.cs" />
+    <Compile Include="Lib\Mvc\BusinessLogic.cs" />
+    <Compile Include="Lib\Mvc\Controller.cs" />
+    <Compile Include="Lib\Mvc\Repositorio.cs" />
+    <Compile Include="Lib\Session.cs" />
+    <Compile Include="Lib\Word.cs" />
+    <Compile Include="Mvc\Controllers\AdministradoraController.cs" />
+    <Compile Include="Mvc\Controllers\AgendaController.cs" />
+    <Compile Include="Mvc\Controllers\ArquivoController.cs" />
+    <Compile Include="Mvc\Controllers\AuthController.cs" />
+    <Compile Include="Mvc\Controllers\CampanhaController.cs" />
+    <Compile Include="Mvc\Controllers\CentroCustoController.cs" />
+    <Compile Include="Mvc\Controllers\CidadeController.cs" />
+    <Compile Include="Mvc\Controllers\CondominioController.cs" />
+    <Compile Include="Mvc\Controllers\DespesaController.cs" />
+    <Compile Include="Mvc\Controllers\DespesaRelatorioController.cs" />
+    <Compile Include="Mvc\Controllers\FornecedorController.cs" />
+    <Compile Include="Mvc\Controllers\GrupoPermissaoController.cs" />
+    <Compile Include="Mvc\Controllers\HistoricoController.cs" />
+    <Compile Include="Mvc\Controllers\HomeController.cs" />
+    <Compile Include="Mvc\Controllers\NotificacaoController.cs" />
+    <Compile Include="Mvc\Controllers\PermissaoController.cs" />
+    <Compile Include="Mvc\Controllers\RealTimeController.cs" />
+    <Compile Include="Mvc\Controllers\ReceitaController.cs" />
+    <Compile Include="Mvc\Controllers\ReceitaRelatorioController.cs" />
+    <Compile Include="Mvc\Controllers\SindicoController.cs" />
+    <Compile Include="Mvc\Controllers\UnidadeController.cs" />
+    <Compile Include="Mvc\Controllers\UsuarioController.cs" />
+    <Compile Include="Mvc\Controllers\VariavelController.cs" />
+    <Compile Include="Mvc\Models\Account\Account.cs" />
+    <Compile Include="Mvc\Models\Account\AccountRepositorio.cs" />
+    <Compile Include="Mvc\Models\Administradora\Administradora.cs" />
+    <Compile Include="Mvc\Models\Administradora\AdministradoraTelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Administradora\AdministradoraRepositorio.cs" />
+    <Compile Include="Mvc\Models\Administradora\AdministradoraRules.cs" />
+    <Compile Include="Mvc\Models\Agenda\Agenda.cs" />
+    <Compile Include="Mvc\Models\Agenda\AgendaRepositorio.cs" />
+    <Compile Include="Mvc\Models\Agenda\AgendaRules.cs" />
+    <Compile Include="Mvc\Models\Arquivo\Arquivo.cs" />
+    <Compile Include="Mvc\Models\Arquivo\ArquivoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Arquivo\ArquivoRules.cs" />
+    <Compile Include="Mvc\Models\Auth\AuthRules.cs" />
+    <Compile Include="Mvc\Models\Campanha\Campanha.cs" />
+    <Compile Include="Mvc\Models\Campanha\CampanhaRepositorio.cs" />
+    <Compile Include="Mvc\Models\Campanha\CampanhaAnexoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Campanha\CampanhaRules.cs" />
+    <Compile Include="Mvc\Models\Cidade\Cidade.cs" />
+    <Compile Include="Mvc\Models\Cidade\CidadeRepositorio.cs" />
+    <Compile Include="Mvc\Models\Condominio\Condominio.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioDocumento.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioDocumentoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioRepositorio.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioRules.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioSearch.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioVariavel.cs" />
+    <Compile Include="Mvc\Models\Condominio\CondominioVariavelRepositorio.cs" />
+    <Compile Include="Mvc\Models\Contato\Contato.cs" />
+    <Compile Include="Mvc\Models\Contato\ContatoTelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Contato\ContatoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Documento\Documento.cs" />
+    <Compile Include="Mvc\Models\Documento\DocumentoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Endereco\Endereco.cs" />
+    <Compile Include="Mvc\Models\Endereco\EnderecoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\CentroCusto\CentroCusto.cs" />
+    <Compile Include="Mvc\Models\Financeiro\CentroCusto\CentroCustoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\CentroCusto\CentroCustoRules.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\Despesa.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaHistorico.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaHistoricoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaAnexoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaPesquisa.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaItemRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\DespesaRules.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\Relatorio\CentroCustoUnidade.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\Relatorio\DespesaCentroCusto.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\Relatorio\DespesaRelatorioRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Despesa\Relatorio\DespesaRelatorioRules.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Item\FinanceiroItem.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Item\FinanceiroItemRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\Receita.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\ReceitaItem.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\ReceitaItemRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\ReceitaRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\ReceitaRules.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\Relatorio\ReceitaCentral.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\Relatorio\ReceitaRelatorioRepositorio.cs" />
+    <Compile Include="Mvc\Models\Financeiro\Receita\Relatorio\ReceitaRelatorioRules.cs" />
+    <Compile Include="Mvc\Models\Fornecedor\Fornecedor.cs" />
+    <Compile Include="Mvc\Models\Fornecedor\FornecedorPesquisa.cs" />
+    <Compile Include="Mvc\Models\Fornecedor\FornecedorRepositorio.cs" />
+    <Compile Include="Mvc\Models\Fornecedor\FornecedorRules.cs" />
+    <Compile Include="Mvc\Models\Historico\Historico.cs" />
+    <Compile Include="Mvc\Models\Historico\HistoricoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Historico\HistoricoRules.cs" />
+    <Compile Include="Mvc\Models\Notificacao\Notificacao.cs" />
+    <Compile Include="Mvc\Models\Notificacao\NotificacaoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Notificacao\NotificacaoRules.cs" />
+    <Compile Include="Mvc\Models\Notificacao\NotificacaoUsuario.cs" />
+    <Compile Include="Mvc\Models\Notificacao\NotificacaoUsuarioRepositorio.cs" />
+    <Compile Include="Mvc\Models\Permissao\GrupoPermisaoRules.cs" />
+    <Compile Include="Mvc\Models\Permissao\GrupoPermissao.cs" />
+    <Compile Include="Mvc\Models\Permissao\GrupoPermissaoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Permissao\Permissao.cs" />
+    <Compile Include="Mvc\Models\Permissao\PermissaoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Permissao\TipoPermissao.cs" />
+    <Compile Include="Mvc\Models\Permissao\TipoPermissaoRepositorio.cs" />
+    <Compile Include="Mvc\Models\RealTime\RealTime.cs" />
+    <Compile Include="Mvc\Models\RealTime\RealTimeRepositorio.cs" />
+    <Compile Include="Mvc\Models\Session\Session.cs" />
+    <Compile Include="Mvc\Models\Session\SessionRepositorio.cs" />
+    <Compile Include="Mvc\Models\Sindico\Sindico.cs" />
+    <Compile Include="Mvc\Models\Sindico\SindicoTelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Sindico\SindicoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Sindico\SindicoRules.cs" />
+    <Compile Include="Mvc\Models\TableDependency\TableDependency.cs" />
+    <Compile Include="Mvc\Models\Telefone\Telefone.cs" />
+    <Compile Include="Mvc\Models\Telefone\TelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Unidade\Unidade.cs" />
+    <Compile Include="Mvc\Models\Unidade\UnidadeAnexoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Unidade\UnidadeRepositorio.cs" />
+    <Compile Include="Mvc\Models\Unidade\UnidadeRules.cs" />
+    <Compile Include="Mvc\Models\Unidade\UnidadeTelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Usuario\Usuario.cs" />
+    <Compile Include="Mvc\Models\Usuario\UsuarioAnexoRepositorio.cs" />
+    <Compile Include="Mvc\Models\Usuario\UsuarioRepositorio.cs" />
+    <Compile Include="Mvc\Models\Usuario\UsuarioRules.cs" />
+    <Compile Include="Mvc\Models\Usuario\UsuarioTelefoneRepositorio.cs" />
+    <Compile Include="Mvc\Models\Variavel\Variavel.cs" />
+    <Compile Include="Mvc\Models\Variavel\VariavelRepositorio.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Public\Files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14835</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5921/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+﻿.centro-custo-seta {
+    color: #444;
+    width: 11px;
+    height: 9px;
+    /*background-position: -197px -466px;*/
+    background-image: url(seta.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

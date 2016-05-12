@@ -1,0 +1,114 @@
+﻿.ui-selection{
+	position: relative;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+    border-radius: 2px;
+}
+
+.ui-selection-menu-label{
+	display: inline-block;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+    padding: 6px 12px;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+.ui-selection-menu-dropdown{
+	display: inline-block;
+	background: url(arrow-up-down.png) center no-repeat;
+	border: none;
+	width: 7px;
+	position: absolute !important;
+	right: 5px;
+    padding: 15px 12px;
+}
+
+.ui-selection-menu-button{
+    background-color: #fff;
+	border: 2px solid #d9d9d9;
+    height: 34px;
+    border-radius: 2px;
+	color: #777;
+	list-style: none;
+	margin: 0 0px;
+	min-width: 46px;
+	outline: none;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+    display: block;
+}
+
+.ui-selection-menu-button-transparent{
+    background-color: transparent !important;
+	border: 2px solid transparent !important;
+	outline: none;
+}
+
+.ui-selection-menu-button-disabled {
+    background-image: -webkit-linear-gradient(#f1f1f1, #f1f1f1 38%, #e6e6e6);
+    border-color: rgba(80, 80, 80, 0.2);
+    box-shadow: 0 1px 0 rgba(80, 80, 80, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+    color: #aaa;
+}
+
+.ui-selection-menu-button-invalid {
+    border: 2px solid #dd4b39 !important;
+}
+
+.ui-selection-menu-button:focus{
+	border: 2px solid #23b7e5;
+}
+
+.ui-selection-menu-button-invalide{
+	border-color: #ff0000
+}
+
+.ui-selection-menu-button:active{
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(top,#eee,#e0e0e0);
+	background-image: -moz-linear-gradient(top,#eee,#e0e0e0);
+	background-image: -ms-linear-gradient(top,#eee,#e0e0e0);
+	background-image: -o-linear-gradient(top,#eee,#e0e0e0);
+	background-image: linear-gradient(top,#eee,#e0e0e0);
+	color: #333;
+	z-index: 2;
+}
+
+.ui-selection-menu{
+	-webkit-user-select: none;
+	visibility: visible;
+	display: none;
+	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-transition: opacity 0.218s;
+	-moz-transition: opacity 0.218s;
+	-ms-transition: opacity 0.218s;
+	-o-transition: opacity 0.218s;
+	transition: opacity 0.218s;
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.2);
+	cursor: default;
+	font-size: 13px;
+	margin: 0;
+	outline: none;
+	padding: 6px 0 6px;
+	position: absolute;
+	top: 0px;
+	z-index: 1000;
+    min-width: 100%;
+}
+
+.ui-selection-scroll{
+	max-height: 350px;
+	overflow-y: visible;
+	overflow-x: hidden;
+}

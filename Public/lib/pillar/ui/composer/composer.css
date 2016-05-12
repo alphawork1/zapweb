@@ -1,0 +1,86 @@
+﻿.ui-composer-root{
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 7px;
+    width: 477px;
+    z-index: 9999999999999;
+}
+
+.ui-composer {
+    /*display: block;    
+    background-color: #fff;
+    z-index: 9999;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border: 1px solid #bbb;    
+    padding: 14px;*/
+    display: block;
+    padding: 8px;
+}
+
+.ui-composer-container {
+    background-color: #D7EBF8;
+    border: 1px solid #A3B3BF;		
+	margin: auto;	
+	padding: 5px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+	-webkit-transition: opacity .13s linear;
+	transition: opacity .13s linear;
+	z-index: 2201;
+}
+
+.ui-composer-dialog {    
+    background-color: #fff;
+	border: 1px solid #A3B3BF;
+}
+
+.ui-composer-composer {
+    background-color: #fff;	
+	z-index: 2201;
+}
+
+.ui-composer .ui-composer-header {
+    font-size: 15px;
+    margin-bottom: 14px;
+	color: #23527c;
+}
+
+.ui-composer .ui-composer-body {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.ui-composer .ui-composer-footer {
+    border-right: 0px;
+    border-left: 0px;
+    height: 42px;
+    overflow-y: hidden;
+    border-width: 1px 1px 0px 1px;
+}
+
+.ui-composer .ui-composer-close {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    padding: 7px 9px 5px;;
+    background-color: #e81123;
+    cursor: pointer;
+}
+
+.ui-composer-close-icon{
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -122px;
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    display: inline-block;
+	color: #fff;
+    font-size: 15px;
+}

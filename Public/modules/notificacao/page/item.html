@@ -1,0 +1,6 @@
+﻿<div class="notificacao-page-item">
+    <span class="notificacao-page-usuario">@{PI.String.firstAndlastWord(this.notificacao.De.Nome)}</span>
+    <span class="notificacao-page-data">@{notificacao.Data.getDateStringFromFormat('dd Mm yyyy hh:mm')}</span>
+    <div class="notificacao-page-message">@{this.notificacao.De.Unidade.Nome}</div> 
+    <div class="notificacao-page-message">@{notificacao.Message}</div>
+</div>

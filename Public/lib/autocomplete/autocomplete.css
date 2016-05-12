@@ -1,0 +1,78 @@
+﻿.autocomplete-suggestions { 
+	border: 1px solid #999;
+	background: #FFF;
+	cursor: default; 
+	overflow: auto; 
+    font-size: 12px;
+	/*-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); 
+	box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); */
+	/*box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);*/
+}
+.autocomplete-suggestion { padding: 5px 5px; white-space: nowrap; overflow: hidden; border: 1px solid #fff; border-bottom: 1px solid #eee; }
+.autocomplete-no-suggestion { cursor: pointer padding: 5px; margin: 7px;}
+.autocomplete-selected { background-color: #f6faff;border: 1px solid #b2d9ff; }
+.autocomplete-suggestions strong { 
+	font-weight: bold; color: #000;
+	border: 1px solid #ffab00;
+    border-color: #f0c36d;
+    background-color: #f9edbe !important;
+    padding: 0px 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+.autocomplete-suggestions-badge-green{
+	float: right;
+    margin-right: 9px;
+    background-color: #007ACC;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.autocomplete-suggestions-badge-red{
+	float: right;
+    margin-right: 9px;
+    background-color: #ffab00;
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.autocomplete-link{
+    display: none;
+    border: 2px solid #9CB4D6;
+    background: #E0E6EF;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    padding: 5px 5px;
+    min-height: 34px;
+}
+
+.autocomplete-close{
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 2px -106px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 7;
+    width: 16px;
+    height: 15px;
+    right: 3px;
+    top: 7px;
+}
+
+.autocomplete-close:hover{
+    background-position: 2px -120px;
+    cursor: pointer;
+}

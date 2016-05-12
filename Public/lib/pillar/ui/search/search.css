@@ -1,0 +1,14 @@
+﻿.ui-search {
+    float: right;
+    margin-top: 16px;
+    width: 200px;
+}
+
+.ui-search-textbox {
+    border: 0px !important;
+}
+
+.ui-search-textbox {
+    border: 0px !important;
+    background: transparent !important;
+}

@@ -1,0 +1,11 @@
+﻿.ui-button {
+    display: inline-block;
+}
+
+.ui-button-anime {
+    display: none;
+    position: relative;
+    top: 2px;
+    width: 14px;    
+    margin-right: 4px;
+}

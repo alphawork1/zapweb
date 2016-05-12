@@ -1,0 +1,63 @@
+﻿<div class="app-page row">
+
+    <div class="app-print-hidden col-sm-1 col-sm-offset-1"></div>
+
+    <div class="app-print-hidden col-sm-7">
+        
+        <div class="app-page-body">
+            
+            <h4><i class="fa fa-search app-page-body-title-icon"></i> Pesquisar Condomínio</h4>
+            <div class="panel-body">
+                
+                <div at="rating" class="form-group col-sm-12"></div>
+                <!--/form-group-->
+                
+                <div at="nome" class="form-group col-sm-12"></div>
+                <!--/form-group-->
+                
+                <div at="administradora" class="form-group col-sm-12"></div>
+                <!--/form-group-->
+                
+                <div at="unidade" class="form-group col-sm-12"></div>
+                <!--/form-group-->                
+                
+                <div at="ultimaCampanha" class="form-group col-sm-12"></div>
+                <!--/form-group-->                
+                
+                <div at="endereco" class=""></div>
+                <!--/form-group-->                
+                
+                <div class="form-group col-sm-12">
+                    <div at="addNew"></div>
+                    <div at="lineselect"></div>
+                </div>
+                <!--/form-group-->
+
+                <div class="form-group col-sm-12">
+                    <div at="table"></div>
+                    <div at="paging" style="float: right;"></div>                    
+                </div>
+                <!--/form-group-->
+
+            </div>
+
+            <div class="panel-body">
+                <div at="results" class="form-group condominio-search-results"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="app-print-hidden app-page-opcoes">
+        <div class="app-opcoes-button" at="pesquisar"></div>
+        <div class="app-opcoes-button" at="voltar"></div>
+        <div class="app-opcoes-button" at="imprimir"></div>
+    </div>
+
+    <div class="app-print-only" at="printContent" style="margin-top: -80px"></div>
+
+    <!--image baixa para fins de cache-->
+    <img style="position: fixed; top: -10000px" src="@{PI.Url.create('Condominio', '/search/img/zapPragas512.png')}" width="150" height="150">
+
+</div>

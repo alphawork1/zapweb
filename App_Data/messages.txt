@@ -1,0 +1,12 @@
+﻿USUARIO_SENHA_INCORRETA=Usuário ou senha incorreta
+USUARIO_CANCELADO=Usuário não esta ativo no sistema
+USUARIO_SEM_PERMISSAO=Usuário não tem permissão. Entre em contato com o Administrador
+USUARIO_EXISTENTE_NOME=Já existe um usuário cadastrado com este nome
+USERNAME_EXISTENTE_NOME=Já existe um login cadastrado com este nome
+UNIDADE_EXISTENTE_NOME=Já existe uma unidade com este  nome
+PERMISSAO_EXISTENTE=Já existe um grupo de permissão com este nome
+PERMISSAO_EXCLUIR=Há usuários vinculados com esta permissão
+FORNECEDOR_EXISTENTE=Já existe um fornecedor cadastrado com esta Razão Social
+DESPESA_REMETIDA=Despesa já remetida
+CENTRO_CUSTO_EXISTENTE=Já existe um centro de custo cadastrado com este nome
+CENTRO_CUSTO_VINCULADO=Não foi possível excluir este centro de custo pois há despesas vinculadas

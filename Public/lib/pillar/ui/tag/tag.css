@@ -1,0 +1,84 @@
+﻿.ui-tag
+{
+	/*font-family: Verdana;
+	border-radius: 2px;
+	border: 1px solid #d9d9d9;
+	color:#555 !important;	
+	box-shadow: none;
+	width: 100%;
+	transition: background 0.2s linear 0s;
+	padding: 0px;
+	position: relative;*/	
+}
+
+.ui-tag.focus
+{	
+	/*border: 1px solid #23b7e5 !important;*/
+}
+
+.noborder .tags
+{
+	/*border: 0px !important;*/
+}
+
+.ui-tag #conteiner,
+.ui-tag .input
+{
+	/*display: inline-block;*/
+}
+
+.ui-tag .textbox {
+    display: inline-block;
+    /*width: 100%;*/
+}
+
+.ui-tag input
+{
+	/*border: 0px;
+	outline: 0px;
+    height: auto !important;
+    padding-left: 5px !important;*/
+}
+
+.ui-tag .tag
+{
+	position: relative;
+    display: inline-block;
+    /*margin: 1px;
+    padding: 1px;
+    text-shadow: none;
+    -moz-border-radius: 3px;
+    border-radius: 2px;*/
+
+    /*border: 1px solid #70c0e7;*/
+    /* color: #fff; */
+    /* vertical-align: top; */
+    /* -webkit-border-radius: 3px; */
+    /*background-color: #e5f3fb;*/
+    /* font-size: 11px; */
+}
+
+.ui-tag .tag:first-child {
+    /*margin-left: 4px;*/
+}
+
+.ui-tag .tag .close
+{	
+	/*display: inline-block;
+	background: url('close.png') 0px 0px;
+	width: 16px;
+	height: 13px;	
+	margin-left: 4px;
+    position: relative;
+    top: 3px;*/
+}
+
+.ui-tag .tag .close:hover
+{	
+	background: url('close.png') -0px -16px;
+	cursor: pointer;
+}
+
+.ui-tag .arrow-right {
+    padding: 0px 3px;
+}

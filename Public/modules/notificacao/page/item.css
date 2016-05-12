@@ -1,0 +1,28 @@
+﻿.notificacao-page-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.notificacao-page-item:hover {
+    outline: 2px solid #3fb6f2;
+}
+
+.notificacao-page-usuario {
+    font-weight: bold;
+}
+
+.notificacao-page-message {
+    
+}
+
+.notificacao-page-data {
+    float: right;
+    color: #999;
+}
+
+.notificacao-page-item-nao-lida {
+    background: #fff url(opstripe.png) repeat-y left top;
+    border-left: 1px solid #3778c7;
+}

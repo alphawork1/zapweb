@@ -1,0 +1,12 @@
+﻿.usuario-label {
+    padding: 5px;
+}
+
+.usuario-label-sair {
+    color: #fff;
+    margin-left: 7px;
+}
+
+.usuario-label.selected {
+    background-color: #0e639c !important;
+}

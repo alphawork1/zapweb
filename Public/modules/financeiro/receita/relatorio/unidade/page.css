@@ -1,0 +1,28 @@
+.financeiro-receita-relatorio-table{
+	width: 100%;
+	margin-top: 25px;
+}
+
+.financeiro-receita-relatorio-table thead tr td{
+	text-align: center;
+	padding: 3px; 
+}
+
+.financeiro-receita-relatorio-table tr td{
+	border: 1px solid #222;	
+}
+
+.financeiro-receita-relatorio-table tbody tr td{
+	text-align: center;
+	padding: 5px; 
+	font-weight: normal;
+}
+
+.financeiro-receita-relatorio-table tbody tr td + td{
+	text-align: left;
+}
+
+.financeiro-receita-relatorio-table tbody tr td + td + td{
+	text-align: right;
+}
+

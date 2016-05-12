@@ -1,0 +1,60 @@
+.condominio-prospectar-sindico {
+	font-size: 25px; 
+	margin-top: 2px;
+	color: #A1A8AD;
+}
+
+.condominio-prospectar-page-body{
+	position: relative;
+	left: 0px;
+	-webkit-transition: left 0.5s ease;
+	-moz-transition: left 0.5s ease;
+	transition: left 0.5s ease;
+}
+
+.condominio-prospectar-endereco {
+	font-size: 15px; 
+	margin-top: 0px;
+	color: #333;
+	margin: 5px 0px;
+	font-weight: 300;
+}
+
+.condominio-prospectar-panel-body {
+	/*font-size: 16px;*/
+}
+
+.condominio-prospectar-btn-upload {
+	margin-left: 1px;
+}
+
+.condominio-prospectar-acoes.app-opcoes-button {
+	display: inline-block;
+}
+
+.condominio-prospectar-status {
+    width: 235px;
+    display: inline-block;
+    margin-left: 219px;
+}
+
+
+
+/*.condominio-prospectar-panel-body table tr td ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.condominio-prospectar-panel-body table tr td ul li {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	text-decoration: none;
+}*/
+
+.condominio-prospectar-email-tag{
+	background-color: #dce6f8;
+    border: 1px solid #98B3E2;
+    border-radius: 2px;
+    padding: 1px 4px;
+}

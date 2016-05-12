@@ -1,0 +1,72 @@
+<div class="financeiro-relatorio-page">
+
+	<div class="financeiro-relatorio-page-title">
+		RELATÓRIO DE <span at="mes" class="financeiro-relatorio-page-mes"></span> / <span at="ano"></span>
+	</div>
+	
+	<div class="financeiro-relatorio-page-body">
+
+
+		<ul class="relatorio-page-list financeiro-relatorio-page-total-despesas">
+
+			<li class="relatorio-page-item">
+				<span class="level-1">TOTAL DE DESPESAS</span>
+				<span>R$ <span at="totalDespesa">0,00</span></span>
+			</li>
+
+		</ul>
+
+		<!-- iteracao centro de custo por cos -->
+		<div at="container"></div>
+		<!-- / iteracao -->
+
+		<hr/>
+
+		<div class="financeiro-relatorio-page-centro-custos">
+			<span>RESUMO FINANCEIRO DO PERÍODO:</span>
+
+			<ul class="relatorio-page-list" style="margin-left:50px">
+
+				<li class="relatorio-page-item">
+					<span class="level-1">
+						<a at="linkReceita" href="#Relatorio/Receita/Zap/@{mes}/@{ano}">RECEITAS</a>
+					</span>
+					<span>R$ <span at="resumoTotalReceita">0,00</span></span>
+				</li>
+
+				<li class="relatorio-page-item">
+					<span class="level-1">DESPESAS</span>
+					<span>R$ <span at="resumoTotalDespesa">0,00</span></span>
+				</li>
+
+				<li class="relatorio-page-item">
+					<span class="level-1">LUCRO BRUTO</span>
+					<span>R$ <span at="lucroBruto">0,00</span></span>
+				</li>
+
+			</ul>
+
+			<ul class="relatorio-page-list" style="margin-left:50px">
+
+				<li class="relatorio-page-item">
+					<span class="level-1">LUCRO DO LICENCIADO</span>
+					<span>R$ <span at="lucroLicenciado">0,00</span></span>
+				</li>
+
+				<li class="relatorio-page-item">
+					<span class="level-1">LUCRO DA CENTRAL</span>
+					<span>R$ <span at="lucroCentral">0,00</span></span>
+				</li>
+
+				<li class="relatorio-page-item">
+					<span class="level-1">LUCRO DA ZAP</span>
+					<span>R$ <span at="lucroZap">0,00</span></span>
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</div>

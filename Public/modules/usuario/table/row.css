@@ -1,0 +1,13 @@
+﻿.usuario-table-row-excluir {
+	display: none;
+    line-height: 1px;
+    float: right;    
+    margin-right: 5px;
+}
+
+.usuario-table-row-editar {
+	
+	display: none;
+    line-height: 1px;
+    float: right;
+}

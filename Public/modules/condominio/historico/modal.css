@@ -1,0 +1,21 @@
+.condominio-historico-modal{
+	padding: 20px;
+}
+
+.condominio-historico-modal-cmd{
+	margin-top: 20px;
+	text-align: right;
+}
+
+.condominio-historico-modal-table{
+	max-height: 300px;
+	overflow: auto;
+}
+
+.condominio-historico-modal-add{
+	margin-top: 10px;
+}
+
+.condominio-historico-modal-table tbody tr td{
+	padding: 5px 10px;
+}

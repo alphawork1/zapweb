@@ -1,0 +1,78 @@
+.condominio-prospectar-search{    
+}
+
+.condominio-prospectar-search-result{ 
+    position: relative;
+    /*background-color: #f9f9f9;*/
+    border: 1px solid #ccc;
+    margin: 5px 0px;
+    padding: 8px;   
+    border: 1px solid #fff; 
+    border-bottom: 1px dotted #bbb;
+}
+
+.condominio-prospectar-search-resultset{
+    padding: 20px 5px;
+    padding-right: 15px;
+}
+
+.condominio-prospectar-search-stars{
+    display: inline-block;
+}
+
+.condominio-prospectar-search-nota{
+    display: inline-block;
+    font-size: 12.5px;
+    position: relative;
+    top: 1px;    
+}
+
+.condominio-prospectar-search-data{
+    display: inline-block;
+    float: right;
+}
+
+.condominio-prospectar-search-nome{
+    margin: 10px 0px;
+}
+
+.condominio-prospectar-search-unidade{
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
+.condominio-prospectar-search-result:hover{
+	background-color: #f0f0f0;
+	cursor: pointer;
+    background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+}
+
+.condominio-prospectar-search-arrow{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 23px 0;
+    border-color: transparent #b2d9ff transparent transparent;
+}
+
+.condominio-prospectar-search-result-selected{
+    background-color: #f6faff;
+    border: 3px solid #b2d9ff !important;
+}
+
+.condominio-prospectar-search-result-selected .condominio-prospectar-search-arrow{
+    display: block !important;
+}
+
+.condominio-prospectar-search-arrow .fa{
+    position: absolute;
+    top: 0px;
+    right: -29px;
+    color: #fff;
+}

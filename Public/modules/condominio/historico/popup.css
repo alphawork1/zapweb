@@ -1,0 +1,18 @@
+.condominio-historico-popup{
+	padding: 16px;
+}
+
+.condominio-historico-popup h5{
+	padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+.condominio-historico-popup table tr td{
+	padding: 3px;
+}
+
+.condominio-historico-cmd{
+	display: inline-block;
+}

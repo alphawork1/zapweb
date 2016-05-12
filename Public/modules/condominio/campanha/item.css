@@ -1,0 +1,17 @@
+.condominio-painel-item-cmd{
+	margin-top: 10px;
+}
+
+.condominio-painel-item-anexos{
+	/*margin-top: 10px;*/
+	margin-bottom: 4px;
+}
+
+.condominio-painel-item-anexos a{
+	display: block;
+	padding: 2px;
+}
+
+.condominio-campanha-editar{
+	float: right;
+}

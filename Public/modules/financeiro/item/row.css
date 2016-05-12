@@ -1,0 +1,31 @@
+﻿.financeiro-table-row:first-child {
+    padding: 7px 2px;
+}
+
+.financeiro-table-row td {
+    padding: 1px;
+}
+
+.financeiro-table-control2 {
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+    border-bottom: 1px solid #ccc;
+    border-width: 1px !important;
+}
+
+.financeiro-table-control2 .ui-selection-menu-button {
+    border-width: 0px !important;
+}
+
+.financeiro-table-row .btn-excluir {
+    visibility: hidden;
+}
+
+.financeiro-table-row:hover .btn-excluir {
+    visibility: visible;
+}
+
+.financeiro-table-row:hover .btn-excluir {
+    display: block;
+}

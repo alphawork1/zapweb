@@ -1,0 +1,46 @@
+﻿.notificacao-popup-item {
+    padding: 10px;
+    color: #666;
+    width: 318px;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #eee;
+    /*border: 1px solid #3778c7;*/
+}
+
+.notificacao-popup-item-nao-lida {
+    /*border-left: 2px solid #d14836;*/
+    background: url(opstripe.png) repeat-y left top;
+    border-left: 1px solid #3778c7;
+}
+
+.notificacao-popup-item:hover {
+    background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+}
+
+.notificacao-popup-usuario {
+    font-weight: bold;
+}
+
+.notificacao-popup-message {
+    
+}
+
+.notificacao-popup-data {
+    float: right;
+    color: #999;
+    margin-right: 8px;
+}
+
+.notificacao-popup-hora {
+    float: right;
+    clear: both;
+    color: #c9c9c9;
+    margin-right: 8px;
+}
+
+.notificacao-popup-all {
+    padding: 7px;
+    text-align: center;
+    color: #007acc;
+}

@@ -1,0 +1,80 @@
+﻿.ui-modal-container {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+     
+}
+
+.ui-modal-background {
+    background-color: rgba(0, 0, 0, .4);   
+}
+
+.ui-modal {
+    position: relative;
+    border-radius: 3px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+    margin: 0 auto 40px;    
+    width: 550px;
+    -webkit-box-shadow: 0 2px 26px rgba(0, 0, 0, .3), 0 0 0 1px rgba(0, 0, 0, .1);
+    /*height: 200px;*/
+    background-color: #fff;
+    margin-top: 30px;
+    /*transition: width .8s ease, height .8s ease;*/
+    /*background-color: #72cde9;*/
+	/*border: 1px solid #7266ba;*/
+    /*padding: 7px;*/
+}
+
+.ui-modal-content {
+    /*border: 1px solid #61aec6;*/
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.ui-modal-title {
+    background-color: #f5f6f7;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #777;
+    border-radius: 3px;
+}
+
+.ui-modal-close {
+    background-image: url(modal.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -95px;
+    float: right;
+    margin: 13px;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 0 !important;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ui-modal-close:hover {
+    background-image: url(modal.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -108px;    
+}
+
+.ui-modal-body {
+ 
+}

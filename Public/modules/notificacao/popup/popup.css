@@ -1,0 +1,25 @@
+﻿.notificacao-popup {
+    color: #222;
+}
+
+.notificacao-popup-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    max-height: 324px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.notificacao-popup-all{
+    border: 1px solid #fff;
+}
+
+.notificacao-popup-all:hover {
+    background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+}
+
+.notificacao-popup-all i {
+    margin-right: 10px;
+}

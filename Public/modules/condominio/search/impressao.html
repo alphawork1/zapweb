@@ -1,0 +1,180 @@
+<div class="col-sm-12 condominio-print-content">
+	<table class="impressao-table">
+		<tr class="impressao-table-1-tr">
+			<td class="impressao-table-logo">
+				<img class="header-logo" src="@{PI.Url.create('Condominio', '/search/img/zapPragas512.png')}" width="150" height="150">
+			</td>
+			<td class="impressao-table-title">
+				<div class="impressao-table-title-1">Ficha Cadastral de Condomínio</div>
+				<div class="impressao-table-title-2">NET SERVICE - REDE DE SERVIÇOS LTDA </div>
+				<div class="impressao-table-title-3">zap.pragas@gmail</div>		
+		
+				<ul class="impressao-table-title-ul">
+					<li class="impressao-table-title-li">
+						<ul>
+							<li>DATA DE CADASTRO</li>
+							<li>@{this.DataCadastro}</li>
+						</ul>
+					</li>
+		
+					<li class="impressao-table-title-li">
+						<ul>
+							<li>ULTIMA CAMPANHA</li>
+							<li>@{this.DataUltimaCampanha}</li>
+						</ul>
+					</li>
+				</ul>
+		
+			</td>
+		
+			<td class="impressao-table-classificacao">
+				<ul>
+					<li class="impressao-table-classificacao-title">CLASSIFICAÇÃO:</li>
+					<li>(&nbsp@{this.Rank >= 4 ? 'X' : '&nbsp' }&nbsp) Ótimo</li>
+					<li>(&nbsp@{this.Rank == 3 ? 'X' : '&nbsp' }&nbsp) Muito Bom</li>
+					<li>(&nbsp@{this.Rank == 2 ? 'X' : '&nbsp' }&nbsp) Bom</li>
+					<li>(&nbsp@{this.Rank == 1 ? 'X' : '&nbsp' }&nbsp) Regular</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-1">
+			<td style="width: 50%;">
+				NOME COMPLETO DO CONDOMÍNIO<br>
+				@{this.Nome}
+			</td>
+		</tr>
+	</table>
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 50%;">
+				ENDEREÇO<br>
+				@{this.Endereco.Rua}, @{this.Endereco.Numero}
+			</td>
+			<td style="width: 25%;">
+				BAIRRO<br>
+				@{this.Endereco.Bairro}
+			</td>
+			<td style="width: 25%;">
+				CIDADE E ESTADO<br>
+				@{this.Endereco.Cidade.getNomeWithEstado()}
+			</td>
+		</tr>
+	</table>
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 25%;" >
+				CEP<br>
+				@{this.Endereco.Cep}
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 25%;">
+				Nº DE APARTAMENTOS<br>
+				@{this.QuantidadeApto}
+			</td>
+			<td style="width: 25%;">
+				Nº DE BLOCOS<br>
+				@{this.QuantidadeBlocos}
+			</td>
+			<td style="width: 25%;">
+				ANDARES POR BLOCOS<br>
+				@{this.QuantidadeAndaresBloco}
+			</td>
+		</tr>
+	</table>	
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 100%;">
+				NOME DO SINDÍCO<br>
+				@{this.Sindico.Nome}
+			</td>				
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 50%;">
+				FONE RESIDÊNCIAL<br>
+				@{this.Sindico.getTelefonesResidenciais()}
+			</td>
+			<td style="width: 50%;">
+				FONE COMERCIAL<br>
+				@{this.Sindico.getTelefonesComerciais()}
+			</td>
+			
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 50%;">
+				CELULAR<br>
+				@{this.Sindico.getTelefonesCelular()}
+			</td>
+			<td style="width: 50%;">
+				WHATSAPP<br>
+				@{this.Sindico.getNumerosWhatsapp()}
+			</td>
+	
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 100%;">
+				EMAIL DO SINDICO<br>
+				@{this.Sindico.Email}
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 50%;">
+				ZELADOR / ENCARREGADO<br>
+				@{this.Zelador.Nome}
+			</td>
+			<td style="width: 50%;">
+				FONE RESIDENCIAL<br>
+				@{this.Zelador.getTelefonesResidenciais()}
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="width: 50%;">
+				FONE COMERCIAL<br>
+				@{this.Zelador.getTelefonesComerciais()}
+			</td>
+			<td style="width: 50%;">
+				CELULAR<br>
+				@{this.Zelador.getTelefonesCelular()}
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="padding: 15px 0px 50px 15px; width: 100%;">
+				OBSERVAÇÕES<br>
+				@{this.Observacao}
+			</td>
+		</tr>
+	</table>
+	
+	<table class="impressao-table-padrao">
+		<tr class="impressao-table-conteudo-tr-2">
+			<td style="padding: 15px 0px 50px 15px; width: 100%;">
+				ASSINATURA DO COLABORADOR<br>
+			</td>
+		</tr>
+	</table>	
+</div>

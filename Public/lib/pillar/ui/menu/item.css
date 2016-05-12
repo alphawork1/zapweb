@@ -1,0 +1,54 @@
+﻿.ui-menu-item{
+    padding: 10px 0px 10px 10px;
+	white-space:nowrap;
+    border: 1px solid #fff;
+}
+
+.ui-menu-item-icon{
+    font-size: 13px;
+}
+
+.ui-menu-item:hover{
+	background-color: #f0f0f0;
+	cursor: pointer;
+    background-color: #f6faff;
+    border: 1px solid #b2d9ff;
+}
+
+.ui-menu-item-title{
+    /*color: #444;
+    padding-left: 15px;
+    padding-right: 100px;
+	white-space:nowrap;*/
+    display: block;
+    color: #444;
+    padding-left: 25px;
+    white-space: nowrap;
+    min-width: 190px;
+    position: relative;
+    top: 1px;
+}
+
+.ui-menu-item-icon {
+    float: left;
+    margin-top: 1px;
+}
+
+.ui-menu-item-key-stroke {
+    float: right;
+    margin-right: 10px;
+    margin-top: 1px;
+    color: #999;
+}
+
+.ui-menu-item-label-right-class {
+    color: #aaa;
+}
+
+.ui-menu-item-disabled {
+    color: #ccc  !important;
+}
+
+a.ui-menu-item{
+    display: block;
+}

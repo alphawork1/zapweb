@@ -1,0 +1,25 @@
+﻿.ui-textbox-select {
+    position: relative;
+}
+
+.ui-textbox-select-clear {
+    position: absolute;
+    right: 0px;
+    width: 16px;
+    height: 16px;
+    background: url(close.png);
+    z-index: 3;
+    float: right;
+    margin: 9px;
+}
+
+.ui-textbox-select-clear:hover
+{
+	background-position: 0px -16px;	
+	cursor: pointer;
+}
+
+.ui-textbox-select-selected {
+    border: 1px solid #c0c0c0 !important;
+    background-color: #f5f5f5 !important;
+}

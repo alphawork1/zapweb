@@ -1,0 +1,26 @@
+﻿.notificacao-button {
+    position: relative; 
+}
+
+.not-button {
+    padding: 5px;
+}
+
+.notificacao-button-badge {
+    display: none;
+    background-color: #f05050;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    width: 22px;
+    position: absolute;
+    margin-left: -4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -7px;
+    margin-left: 3px;
+}
+
+.notificacao-button.selected {
+    background-color: #0e639c !important;
+}

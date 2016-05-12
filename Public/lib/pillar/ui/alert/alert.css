@@ -1,0 +1,90 @@
+.ui-alert{
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;	
+	z-index: 999999;
+}
+
+.ui-alert-container,
+.ui-alert-container-default,
+.ui-alert-container-success,
+.ui-alert-container-danger,
+.ui-alert-container-warning{
+	background-color: #72cde9;
+	border: 1px solid #579db2;
+	width: 400px;	
+	margin: auto;
+	margin-top: 120px;
+	padding: 5px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+	-webkit-transition: opacity .13s linear;
+	transition: opacity .13s linear;
+	z-index: 2201;
+}
+
+.ui-alert-container-success {
+    background-color: #27c24c !important;
+    border: 1px solid #007700;
+    -webkit-box-shadow: 0 1px 8px rgba(35, 173, 68, 0.4) !important;
+	box-shadow: 0 1px 8px rgba(35, 173, 68, 0.4) !important;
+}
+
+.ui-alert-container-danger {
+    background-color: #F08080 !important;
+    border: 1px solid #cc0000 !important;
+    -webkit-box-shadow: 0 1px 8px rgba(221, 75, 57, 0.4) !important;
+	box-shadow: 0 1px 8px rgba(221, 75, 57, 0.4) !important;
+}
+
+.ui-alert-container-warning {
+    background-color: #f9d21a !important;
+    border: none !important;
+    -webkit-box-shadow: 0 1px 8px rgba(249, 210, 26, 0.4) !important;
+	box-shadow: 0 1px 8px rgba(249, 210, 26, 0.4) !important;
+}
+
+.ui-alert-dialog {    
+    background-color: #fff;
+	border: 1px solid #61aec6;
+}
+
+.ui-alert-container-success .ui-alert-dialog {
+    border: 1px solid #007700 !important;
+}
+
+.ui-alert-container-danger .ui-alert-dialog {
+    border: 1px solid #cc0000 !important;
+}
+
+.ui-alert-title{
+	display:block;
+	height:auto;
+	padding:10px;
+	padding-bottom:0;
+	font:bold 14px verdana;
+	color:#cc0000;
+}
+
+.ui-alert-content{
+	display:block;		
+	height:auto;	
+	font:normal 12px verdana;
+	color:#444;
+	margin:10px;
+	line-height:18px;
+}
+
+.ui-alert-footer{
+	display:block;
+	padding:5px;
+	height: 37px;
+	background-color:#f7f7f7;
+	border-top:1px solid #ececec;
+	position: relative;
+}
