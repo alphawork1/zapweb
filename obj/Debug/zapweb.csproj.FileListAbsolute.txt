@@ -73,3 +73,12 @@ G:\LocalHost\alphawork\zapweb\bin\Microsoft.Web.Infrastructure.xml
 G:\LocalHost\alphawork\zapweb\bin\System.Web.WebPages.Deployment.xml
 G:\LocalHost\alphawork\zapweb\obj\Debug\zapweb.csprojResolveAssemblyReference.cache
 G:\LocalHost\alphawork\zapweb\bin\System.Web.dll
+G:\LocalHost\alphawork\zapweb\bin\Microsoft.CSharp.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.ApplicationServices.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.DynamicData.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.Entity.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.Extensions.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.Routing.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Web.Services.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Xml.dll
+G:\LocalHost\alphawork\zapweb\bin\System.Xml.Linq.dll
