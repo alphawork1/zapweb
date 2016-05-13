@@ -135,7 +135,7 @@
         
         createContentPrint: function(condominios){
             var view = Mvc.Helpers.prepare(condominios, printHtml).toView();
-            console.log(condominios);
+            
             this.view.printContent.html( view );
             
             window.print();

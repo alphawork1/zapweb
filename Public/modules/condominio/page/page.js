@@ -1,5 +1,6 @@
 ﻿yum.define([
 	PI.Url.create('Condominio', '/page/page.html'),
+	PI.Url.create('Condominio', '/page/impressao.html'),
 	PI.Url.create('Condominio', '/page/page.css'),
 	PI.Url.create('Condominio', '/historico/painel.js'),
 	PI.Url.create('Condominio', '/campanha/painel.js'),
@@ -8,7 +9,7 @@
     PI.Url.create('Administradora', '/textbox/textbox.js'),
     
     PI.Url.create('Lib', '/rating/rating.js')
-], function (html) {
+], function (html, impressaoHtml) {
 
     Class('Condominio.Page').Extend(PI.Page).Body({
 
@@ -161,6 +162,15 @@
             this.contatos = new Condominio.Historico.Painel();
             this.campanhas = new Condominio.Campanha.Painel();
 
+            this.imprimir = new UI.Button({
+                label: 'Imprimir',
+                classes: 'cinza',
+                iconLeft: 'fa fa-print',
+                style: {
+                    'min-width': '120px'
+                }
+            });
+
             this.salvar = new UI.Button({
                 label: 'Salvar',
                 iconLeft: 'fa fa-check',
@@ -236,7 +246,12 @@
             
             '{contatos} added': function(contato){
                 this.rating.set( contato.Rank );
-            }
+            },
+            
+            '{imprimir} click': function(){
+                this.view.printContent.html( Mvc.Helpers.tpl({}, impressaoHtml));
+                window.print();
+            },
 
         }
 
