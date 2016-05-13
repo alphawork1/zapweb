@@ -34,7 +34,8 @@ namespace zapweb.Models
         {
             var sql = PetaPoco.Sql.Builder.Append("SELECT Variavel.*")
                                           .Append("FROM Variavel")
-                                          .Append("WHERE IsShow = 1");
+                                          .Append("WHERE IsShow = 1")
+                                          .Append("ORDER BY Ordem");
 
             return Repositorio.GetInstance().Db.Fetch<Variavel>(sql);
         }
