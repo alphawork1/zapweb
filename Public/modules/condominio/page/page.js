@@ -26,13 +26,12 @@
                 dataModel: ''
             });
             
-            
-             this.disposicaoApPorAndar = new UI.TextBox({
-                placeholder: 'Informe a disposição de apartamentos',
-                dataModel: ''
-            });
-            
-            
+            this.disposicaoApPorAndar = new UI.TextArea({
+				placeholder: 'Informe a disposição de apartamentos',
+				autosize: false,
+                height: '105px'
+			});
+
             // fim campos novo
             
             this.dataCadastro = new UI.DateBox({
