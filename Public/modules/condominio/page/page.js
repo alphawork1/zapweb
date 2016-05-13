@@ -18,7 +18,23 @@
             this.tabbar = new UI.TabBar({
                 container: this.view
             });
-
+            
+            // campos novos
+            
+             this.emailCondominio = new UI.TextBox({
+                placeholder: 'Informe o email do condomínio',
+                dataModel: ''
+            });
+            
+            
+             this.disposicaoApPorAndar = new UI.TextBox({
+                placeholder: 'Informe a disposição de apartamentos',
+                dataModel: ''
+            });
+            
+            
+            // fim campos novo
+            
             this.dataCadastro = new UI.DateBox({
                 placeholder: 'Data do Cadastro',
                 dataModel: 'DataCadastro'
