@@ -44,7 +44,7 @@
                 dataModel: 'Nome'
             });
 
-            this.cadastrador = new UI.TextBox({
+            this.cadastrador = new Usuario.Search.TextBox({
                 placeholder: 'Nome',
                 dataModel: 'Cadastrador'
             });
@@ -77,10 +77,12 @@
             });
 
             this.sindico = new Contato.Painel({
+                label: 'Síndico',
                 dataModel: 'Sindico'
             });
 
             this.zelador = new Contato.Painel({
+                label: 'Zelador',
                 dataModel: 'Zelador'
             });
 
