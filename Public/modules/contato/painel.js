@@ -11,11 +11,6 @@
         instances: function () {
             this.view = new Mvc.View(html);
 
-            this.contato = new UI.TextBox({
-                placeholder: 'Nome do contato',
-                dataModel: 'Nome'
-            });
-
             this.email = new UI.TextBox({
                 placeholder: 'Email',
                 dataModel: 'Email'
@@ -26,6 +21,13 @@
             });
 
             this.model = new Contato.Model();
+        },
+        
+        init: function(){            
+            this.contato = new UI.TextBox({
+                placeholder: 'Nome do ' + ( this.label || 'Contato' ) ,
+                dataModel: 'Nome'
+            });
         },
 
         get: function () {
