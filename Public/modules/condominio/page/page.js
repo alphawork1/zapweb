@@ -249,7 +249,7 @@
             },
             
             '{imprimir} click': function(){
-                this.view.printContent.html(impressaoHtml);
+                this.view.printContent.html( Mvc.Helpers.tpl({}, impressaoHtml));
                 window.print();
             },
 
