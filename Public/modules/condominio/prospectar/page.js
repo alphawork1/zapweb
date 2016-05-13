@@ -52,6 +52,15 @@ yum.define([
                 }
             });
             
+            this.infoModelo = new UI.Button({
+                label: 'Informações',
+                iconLeft: 'fa fa-info',
+                classes: 'cinza',
+                style: {
+                    'min-width': '120px'
+                }
+            });
+            
             this.historicos = new UI.Button({
                 label: 'Históricos',
                 iconLeft: 'fa fa-navicon',
@@ -167,6 +176,53 @@ yum.define([
                 this.model.updateStatus();
             },
             
+            '{infoModelo} click': function(){                
+                var modal = new UI.Modal({
+                   title:'Informações de Modelos',
+                   body:'<table style="padding:15px;" class="white-table">'+
+                            '<tbody>'+
+                                '<tr>'+
+                                    '<td style="width:50%; text-align: left;">Data Inicial</td>'+
+                                    '<td style="width:50%">__DATA_INICIO__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Data Fim</td>'+
+                                    '<td style="width:50%">__DATA_FIM__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Validade Proposta</td>'+
+                                    '<td style="width:50%">__VALIDADE_PROPOSTA__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Horário Término</td>'+
+                                    '<td style="width:50%">__HORARIO_TERMINO__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Valor</td>'+
+                                    '<td style="width:50%">__VALOR__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Acréscimo</td>'+
+                                    '<td style="width:50%">__ACRESCIMO__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Número Parc.</td>'+
+                                    '<td style="width:50%">__NUM_PARCELA__</td>'+
+                                '</tr>'+
+                                '<tr>'+
+                                    '<td style="width:50%;text-align: left;">Desconto</td>'+
+                                    '<td style="width:50%">__DESCONTO__</td>'+
+                                '</tr>'+
+                            '</tbody>'+
+                         '</table>'
+                });
+                
+                modal.render(this.view.body);
+                
+                modal.open();
+                
+            },
+                        
             '{historicos} click': function(){                
                 var modal = new Condominio.Historico.Modal({
                     isShowAdd: false,
