@@ -161,6 +161,12 @@
             this.contatos = new Condominio.Historico.Painel();
             this.campanhas = new Condominio.Campanha.Painel();
 
+            this.imprimir = new UI.Button({
+                label: 'Iprimir',
+                classes: 'cinza',
+                iconLeft: 'fa fa-print' 
+            });
+
             this.salvar = new UI.Button({
                 label: 'Salvar',
                 iconLeft: 'fa fa-check',
@@ -236,7 +242,12 @@
             
             '{contatos} added': function(contato){
                 this.rating.set( contato.Rank );
-            }
+            },
+            
+            '{imprimir} click': function(){
+                this.view.printContent.html('');
+                window.print();
+            },
 
         }
 
