@@ -33,6 +33,8 @@ namespace zapweb.Models
         public string ClasseSocial { get; set; }
         public int NotaCadastrador { get; set; }
         public string TelefonePortaria { get; set; }
+        public string Email { get; set; }
+        public string DisposicaoPorAndar { get; set; }
 
         public int AdministradoraId { get; set; }
         public int UnidadeId { get; set; }

@@ -47,6 +47,7 @@ namespace zapweb.Lib
             FormsAuthenticationTicket authTicket = new FormsAuthenticationTicket(1, uuid, DateTime.Now, DateTime.Now.AddDays(1), true, uuid);
             string encryptedTicket = FormsAuthentication.Encrypt(authTicket);
             HttpCookie authCookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
+            authCookie.Expires = DateTime.Now.AddDays(5);
             HttpContext.Current.Response.Cookies.Add(authCookie);
         }
 
