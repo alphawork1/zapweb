@@ -32,6 +32,12 @@
 				autosize: false,
                 height: '105px'
 			});
+            
+            this.avalicaoCadastrador = new UI.TextArea({
+				placeholder: 'Por quê da avaliação',
+				autosize: false,
+                height: '105px'
+			});
 
             // fim campos novo
             
