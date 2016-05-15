@@ -200,7 +200,7 @@
 
         viewDidLoad: function () {
             var self = this;
-            
+                       
             this.tabbar.add('geral', 'Dados Gerais', true);
             this.tabbar.add('contatos', 'Contatos');
             this.tabbar.add('campanhas', 'Campanhas');
@@ -217,6 +217,7 @@
                 this.tabbar.hideTab('campanhas');
                 
             }else{
+                
                 app.home.setTitle('Editar Condomínio');
                 
                 this.contatos.load( this.model );
@@ -224,6 +225,12 @@
                 
                 this.model.get().ok(function(model){
                     self.model = model;
+                    console.log(self.model.Status  != Condominio.Status.CLIENTE);
+                    if( self.model.Status  != Condominio.Status.CLIENTE ) {
+                        self.view.emailCondominio.parent().removeClass('col-sm-8').addClass('col-sm-12');
+                        
+                        self.view.referencia.parent().hide();
+                    }
                     
 					self.breadcumb.setTitle('Condomínio ' + model.Nome);
 
