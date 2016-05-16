@@ -219,6 +219,8 @@
                 this.model.get().ok(function(model){
                     self.model = model;
                     
+                    console.log(self.mod);
+                    
 					self.breadcumb.setTitle('Condomínio ' + model.Nome);
 
                     self.injectModelToView( model );
