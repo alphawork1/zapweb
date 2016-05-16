@@ -69,7 +69,6 @@ PI.Url.add('Lib.Autocomplete',  'Lib', '/autocomplete');
 PI.Url.add('Lib.TableFilter',   'Lib', '/tablefilter');
 PI.Url.add('Lib.TableOrder',    'Lib', '/tableorder');
 PI.Url.add('Lib.DataTime',      'Lib', '/datatime');
-PI.Url.add('Lib.Tips',          'Lib', '/tips');
 PI.Url.add('Lib.Scroll',        'Lib', '/scroll');
 
 /**
@@ -101,6 +100,7 @@ PI.Url.add('Variavel',      'Modules', '/variavel');
 * Service
 */
 PI.Service.add( 'Agenda', 
+                'Auth',
                 'Administradora', 
                 'Condominio', 
                 'Sindico', 

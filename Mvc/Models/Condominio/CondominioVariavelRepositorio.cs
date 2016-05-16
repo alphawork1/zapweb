@@ -15,6 +15,8 @@ namespace zapweb.Models
             if (condominio == null) return;
             if (variaveis == null) return;
 
+            if (condominio.Id == 0) return;
+
             foreach (var variavel in variaveis)
             {
                 Repositorio.GetInstance().Db.Insert("CondominioVariavel", "Id", new {
@@ -41,7 +43,8 @@ namespace zapweb.Models
         {
             var sql = PetaPoco.Sql.Builder.Append("SELECT Variavel.*, CondominioVariavel.*")
                                           .Append("FROM Variavel")
-                                          .Append("LEFT JOIN CondominioVariavel ON CondominioVariavel.VariavelId = Variavel.Id AND CondominioVariavel.CondominioId = @0", condominio.Id);                                          
+                                          .Append("LEFT JOIN CondominioVariavel ON CondominioVariavel.VariavelId = Variavel.Id AND CondominioVariavel.CondominioId = @0", condominio.Id)
+                                          .Append("ORDER BY Variavel.Tipo");
 
             return Repositorio.GetInstance().Db.Fetch<Variavel, CondominioVariavel, Variavel>((v, c)=> {
 

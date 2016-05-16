@@ -11,7 +11,7 @@ yum.define([
             auth.isAutenticate();
             
             EventGlobal.listen('error::401', function(){
-                window.location = '/login';
+                window.location = '/';
             });
         },
 

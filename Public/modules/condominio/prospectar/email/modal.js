@@ -1,5 +1,6 @@
 yum.define([
-    PI.Url.create('Condominio', '/prospectar/email/modal.html')    
+    PI.Url.create('Condominio', '/prospectar/email/modal.html'),
+    PI.Url.create('Condominio', '/prospectar/model.js')
 ], function(html){
 
     Class('Condominio.Prospectar.Email.Modal').Extend(UI.Modal).Body({
@@ -32,6 +33,8 @@ yum.define([
                 }
             });
             
+            this.model = new Condominio.Prospectar.Model();
+            
             this.listEmail = [];
             
             this.__SEPARADORES__ = ['\n', ',', ';'];
@@ -47,9 +50,9 @@ yum.define([
             this.base.viewDidLoad();
         },
         
-        pushEmail: function(email, emails){         
+        pushEmail: function(title, email, emails){         
             if(email != undefined && email.length > 0){
-                emails.push( '<span class="condominio-prospectar-email-tag">' + email + '</span>' );
+                emails.push( '<span title="' + title + '" class="condominio-prospectar-email-tag">' + email + '</span>' );
                 this.listEmail.push( email );
             }
         },
@@ -57,12 +60,14 @@ yum.define([
         popule: function(condominio){
             var emails = [];
             
-            this.pushEmail(condominio.Sindico.Email, emails);
-            this.pushEmail(condominio.Zelador.Email, emails);
-            this.pushEmail(condominio.Administradora.Email, emails);
+            this.pushEmail('Síndico', condominio.Sindico.Email, emails);
+            this.pushEmail('Zelador', condominio.Zelador.Email, emails);
+            this.pushEmail('Administradora', condominio.Administradora.Email, emails);
             
             // this.emails.set( this.joinEmails( emails ) );
             this.view.destinatarios.html( emails.join(' ') );
+            
+            this.view.element.find('.condominio-prospectar-email-tag').poshytip();
         },
         
         splitEmails: function(emails){
@@ -101,7 +106,15 @@ yum.define([
                                 
                 this.enviar.setLabel('Enviando...').anime(true).lock();
                 
-                this.event.trigger('enviar', assunto, mensagem.replace(/\n/gi, '<br>'), list.join(','));
+                this.model.CondominioId = this.condominio.Id;
+                this.model.Arquivos = this.arquivos;
+                this.model.Assunto = assunto;
+                this.model.Mensagem = mensagem.replace(/\n/gi, '<br>');
+                this.model.Emails = list.join(',');
+                
+                this.model.enviar();
+                
+                this.close();
             }
         }
 

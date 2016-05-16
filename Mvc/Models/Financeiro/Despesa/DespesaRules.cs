@@ -91,9 +91,10 @@ namespace zapweb.Models
             if (
                   (despesaOld.Status == DespesaStatus.ABERTA) ||
                   (despesaOld.Status == DespesaStatus.NAO_PAGA) ||
-                  (
-                    (despesaOld.Status == DespesaStatus.REMETIDA || despesa.Status == DespesaStatus.NAO_AUTORIZADA) && unidadeCurrent.Id == despesa.Unidade.GetUnidadeIdPai()
-                  ) ||
+                  (despesaOld.Status== DespesaStatus.NAO_AUTORIZADA) ||
+                  //(
+                    //(despesaOld.Status == DespesaStatus.REMETIDA || despesa.Status == DespesaStatus.NAO_AUTORIZADA) && unidadeCurrent.Id == despesa.Unidade.GetUnidadeIdPai()
+                  //) ||
                   (unidadeCurrent.Tipo == UnidadeTipo.ZAP)
                )
             {

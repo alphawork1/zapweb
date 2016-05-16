@@ -54,8 +54,9 @@ yum.define([
             });
         },
         
-        viewDidLoad: function(){
-            
+        viewDidLoad: function(){            
+			this.data.set( Lib.DataTime.Now().getDateStringFromFormat('dd/MM/yyyy') );
+			
             this.base.viewDidLoad();
         },
 		

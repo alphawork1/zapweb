@@ -142,17 +142,13 @@ yum.define([
                 
                 var self = this;
                 var modal = new Condominio.Prospectar.Email.Modal({
+                    arquivos: arquivoIds,
                     condominio: this.model
                 });
                 
                 modal.render( this.view.body );
                 
-                modal.open();
-                
-                modal.event.listen('enviar', function(assunto, mensagem, emails){
-                    modal.close();
-                    self.model.enviarDocumento(self.model.Id, assunto, mensagem, arquivoIds, emails);                    
-                });                                    
+                modal.open();                          
             },
             
             '{rating} click': function(rank){
@@ -186,9 +182,11 @@ yum.define([
                     model: new Condominio.Historico.Model({
                         Condominio: this.model
                     })
-                });
+                });                               
                 
                 modal.render( this.view.body );
+                
+                modal.rank.set( this.model.Rank );
                 
                 modal.open();                
             },
