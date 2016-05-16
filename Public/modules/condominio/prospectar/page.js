@@ -1,5 +1,6 @@
 yum.define([
     PI.Url.create('Condominio', '/prospectar/page.html'),
+    PI.Url.create('Condominio', '/prospectar/informacoes_modelo.html'),
     PI.Url.create('Condominio', '/prospectar/page.css'),
     
     PI.Url.create('Condominio', '/prospectar/search/search.js'),
@@ -10,7 +11,7 @@ yum.define([
     PI.Url.create('Condominio', '/historico/modaladd.js'),
     
     PI.Url.create('Variavel', '/painel/painel.js')
-], function(html) {
+], function(html, infoModeloHtml) {
 
     Class('Condominio.Prospectar.Page').Extend(PI.Page).Body({
 
@@ -179,42 +180,8 @@ yum.define([
             '{infoModelo} click': function(){                
                 var modal = new UI.Modal({
                    title:'Informações de Modelos',
-                   body:'<table style="padding:15px;" class="white-table">'+
-                            '<tbody>'+
-                                '<tr>'+
-                                    '<td style="width:50%; text-align: left;">Data Inicial</td>'+
-                                    '<td style="width:50%">__DATA_INICIO__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Data Fim</td>'+
-                                    '<td style="width:50%">__DATA_FIM__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Validade Proposta</td>'+
-                                    '<td style="width:50%">__VALIDADE_PROPOSTA__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Horário Término</td>'+
-                                    '<td style="width:50%">__HORARIO_TERMINO__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Valor</td>'+
-                                    '<td style="width:50%">__VALOR__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Acréscimo</td>'+
-                                    '<td style="width:50%">__ACRESCIMO__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Número Parc.</td>'+
-                                    '<td style="width:50%">__NUM_PARCELA__</td>'+
-                                '</tr>'+
-                                '<tr>'+
-                                    '<td style="width:50%;text-align: left;">Desconto</td>'+
-                                    '<td style="width:50%">__DESCONTO__</td>'+
-                                '</tr>'+
-                            '</tbody>'+
-                         '</table>'
+                   body:infoModeloHtml,
+                   width: '720px'
                 });
                 
                 modal.render(this.view.body);
