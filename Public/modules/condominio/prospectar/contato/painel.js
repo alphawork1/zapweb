@@ -33,7 +33,7 @@ yum.define([
             if(telefones == undefined) return view;
             
             for (var i = 0; i < telefones.length; i++) {
-                view += Mvc.Helpers.tpl(telefones[i], '<a href="skype:@{Numero}?call"><span class="label @{this.getCssLabel()}">@{this.getTipoLabel()}:</span> @{Numero}</a>') + '<br>';    
+                view += Mvc.Helpers.tpl(telefones[i], '<a href="skype:@{Numero}?call"><span style="min-width: 62px;display: inline-block;padding: 3px;" class="label @{this.getCssLabel()}">@{this.getTipoLabel()}</span> @{Numero}</a>') + '<br>';    
             }
             
             return view;

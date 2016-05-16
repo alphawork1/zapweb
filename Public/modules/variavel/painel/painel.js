@@ -1,9 +1,10 @@
 yum.define([
-    PI.Url.create('Variavel', '/painel/painel.html'),    
+    PI.Url.create('Variavel', '/painel/painel.html'),
+    PI.Url.create('Variavel', '/painel/info.html'),
     PI.Url.create('Variavel', '/painel/item.js'),
     
     PI.Url.create('Variavel', '/model.js')
-], function(html){
+], function(html, infoHtml){
 
     Class('Variavel.Painel').Extend(Mvc.Component).Body({
 
@@ -13,6 +14,15 @@ yum.define([
             this.model = new Variavel.Model();
             
             this.items = [];
+
+            this.info = new UI.Button({
+                label: 'Informações',
+                iconLeft: 'fa fa-info',
+                classes: 'cinza',
+                style: {
+                    'min-width': '120px'
+                }
+            });
                   
             this.add = new UI.Button({
                 label: 'Novo',
@@ -103,6 +113,19 @@ yum.define([
             '{salvar} click': function(){
                 
             },
+            
+            '{info} click': function(){                
+                var modal = new UI.Modal({
+                   title:'Informações de Modelos',
+                   body: infoHtml,
+                   width: '720px'
+                });
+                
+                modal.render(this.view.tbody);
+                
+                modal.open();
+                
+            }
         }
 
     });

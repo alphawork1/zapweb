@@ -1,6 +1,5 @@
 yum.define([
-    PI.Url.create('Condominio', '/prospectar/page.html'),
-    PI.Url.create('Condominio', '/prospectar/informacoes_modelo.html'),
+    PI.Url.create('Condominio', '/prospectar/page.html'),    
     PI.Url.create('Condominio', '/prospectar/page.css'),
     
     PI.Url.create('Condominio', '/prospectar/search/search.js'),
@@ -11,7 +10,7 @@ yum.define([
     PI.Url.create('Condominio', '/historico/modaladd.js'),
     
     PI.Url.create('Variavel', '/painel/painel.js')
-], function(html, infoModeloHtml) {
+], function(html) {
 
     Class('Condominio.Prospectar.Page').Extend(PI.Page).Body({
 
@@ -47,15 +46,6 @@ yum.define([
             this.pesquisar = new UI.Button({
                 label: 'Pesquisar',
                 iconLeft: 'fa fa-search',
-                classes: 'cinza',
-                style: {
-                    'min-width': '120px'
-                }
-            });
-            
-            this.infoModelo = new UI.Button({
-                label: 'Informações',
-                iconLeft: 'fa fa-info',
                 classes: 'cinza',
                 style: {
                     'min-width': '120px'
@@ -176,20 +166,7 @@ yum.define([
                 
                 this.model.updateStatus();
             },
-            
-            '{infoModelo} click': function(){                
-                var modal = new UI.Modal({
-                   title:'Informações de Modelos',
-                   body:infoModeloHtml,
-                   width: '720px'
-                });
-                
-                modal.render(this.view.body);
-                
-                modal.open();
-                
-            },
-                        
+                  
             '{historicos} click': function(){                
                 var modal = new Condominio.Historico.Modal({
                     isShowAdd: false,

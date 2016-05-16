@@ -29,7 +29,8 @@
         },
         
         toInline: function(){
-            return this.Cep + ' ' + this.Numero + ' ' + this.Bairro + ' ' + this.Cidade.Nome; 
+            var e = this.Cep + ' ' + this.Numero + ' ' + this.Bairro + ' ' + this.Cidade.Nome;
+            return e == undefined ? '' : e; 
         },
 
         actions: {

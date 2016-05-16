@@ -5,7 +5,8 @@ yum.define([
     Class('Variavel.PainelItem').Extend(Mvc.Component).Body({
 
         instances: function(){
-            this.view = new Mvc.View('<tr> <td style="text-align: left; width: 25%">@{this.variavel.Nome}</td> <td at="component"></td> <td>@{this.variavel.Underscore}</td> </tr>');
+            // this.view = new Mvc.View('<tr> <td style="text-align: left; width: 25%">@{this.variavel.Nome}</td> <td at="component"></td> <td>@{this.variavel.Underscore}</td> </tr>');
+            this.view = new Mvc.View('<div class="form-group col-sm-3"> <span style="text-align: left; width: 25%">@{this.variavel.Nome}</span> <span at="component"></span> </div>');
         },
         
         init: function(){
