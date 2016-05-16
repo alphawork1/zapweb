@@ -35,6 +35,7 @@ namespace zapweb.Models
         public string TelefonePortaria { get; set; }
         public string Email { get; set; }
         public string DisposicaoPorAndar { get; set; }
+        public string AvaliacaoCadastrador { get; set; }
 
         public int AdministradoraId { get; set; }
         public int UnidadeId { get; set; }

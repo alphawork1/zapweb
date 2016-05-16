@@ -28,8 +28,7 @@ yum.define([
 			var self = this;
 			
 			this.model.all( this.model.Condominio.Id ).ok(function(campanhas){
-				self.popule(campanhas);
-				console.log(campanhas);
+				self.popule(campanhas);				
 			});
 		},
 		

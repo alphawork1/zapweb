@@ -101,9 +101,11 @@ yum.define([
 
         set: function (item, trigger) {
             if(item == null) return;
-
-            this.search.set( this.getValue(item) );
-
+            var v = this.getValue(item);
+            
+            if(v == undefined) return;
+            
+            this.search.set( v );
             this.select( item, trigger );
         },
 

@@ -24,16 +24,18 @@
             
              this.emailCondominio = new UI.TextBox({
                 placeholder: 'Informe o email do condomínio',
-                dataModel: ''
+                dataModel: 'Email'
             });
             
             this.disposicaoApPorAndar = new UI.TextArea({
+                dataModel: 'DisposicaoPorAndar',
 				placeholder: 'Informe a disposição de apartamentos',
 				autosize: false,
                 height: '105px'
 			});
             
             this.avalicaoCadastrador = new UI.TextArea({
+                dataModel: 'AvaliacaoCadastrador',
 				placeholder: 'Por quê da avaliação',
 				autosize: false,
                 height: '105px'
@@ -53,7 +55,13 @@
 
             this.cadastrador = new Usuario.Search.TextBox({
                 placeholder: 'Nome',
-                dataModel: 'Cadastrador'
+                dataModel: function(model, method, value) {
+                    if(method == 'get'){
+                        this.cadastrador.search.set( model.Cadastrador );
+                    }else{
+                        model.Cadastrador = this.cadastrador.search.get()
+                    }
+                }
             });
 
             this.colaborador = new UI.TextBox({
@@ -98,11 +106,6 @@
                 dataModel: 'Endereco'
             });
             
-            this.email = new UI.TextBox({
-                placeholder: 'Email',
-                dataModel: 'Email'
-            });
-
             this.telefone = new Telefone.Painel({
                 dataModel: 'Telefones'
             });
@@ -225,14 +228,12 @@
                 
                 this.model.get().ok(function(model){
                     self.model = model;
-                    console.log(self.model.Status  != Condominio.Status.CLIENTE);
+                    
                     if( self.model.Status  != Condominio.Status.CLIENTE ) {
                         self.view.emailCondominio.parent().removeClass('col-sm-8').addClass('col-sm-12');
                         
                         self.view.referencia.parent().hide();
                     }
-                    
-                    console.log(self.mod);
                     
 					self.breadcumb.setTitle('Condomínio ' + model.Nome);
 
