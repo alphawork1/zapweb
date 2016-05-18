@@ -1,285 +1,293 @@
-<style>
-	.impressao-container {
-		padding: 30px;
+
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<style>
+	body{
+		padding: 46px 0px;
 	}
-	
+
 	.impressao-table {
-		border: 1px solid #ccc;
-		width: 100%;
-		margin: 0 auto;
+		border: 1px solid #333!important;
+		width: 100%!important;
+		/*margin: 0 auto;*/
 	}
-	
+
 	.impressao-table-padrao {
-		width: 100%;
-		margin: 0 auto;
-		font-size: 8px;
+		width: 100%!important;
+		/*margin: 0 auto;*/
+		font-size:8px!important;
 	}
-	
-	.impressao-table-logo {
-		width: 200px;
-		padding-left: 28px;
+
+	.impressao-table-logo{
+		width: 200px!important;
+		padding-left: 28px!important;
 	}
-	
+
 	.impressao-table-title {
-		font-family: "Arial";
-		text-align: center
+		font-family: "Arial"!important;
+		text-align: center!important
 	}
-	
+
 	.impressao-table-analise-cadastrador ul {
-		margin: 0px;
-		padding: 0px;
+		margin:0px!important;
+		padding:0px!important;
 	}
-	
+
 	.impressao-table-analise-cadastrador ul li {
-		list-style-type: none;
+		list-style-type: none!important;		
 	}
-	
+
 	.impressao-table-title ul li {
-		list-style-type: none;
+		list-style-type: none!important;
 	}
-	
+
 	.impressao-table-title-1 {
-		font-size: 16px;
-		font-weight: bold;
-		margin-top: 15px;
+		font-size: 13px!important;
+		font-weight: bold!important;
+		margin-top: 15px!important;
 	}
-	
+
 	.impressao-table-title-2 {
-		font-size: 1px;
-		font-weight: bold;
+		font-size: 9px!important;
+		font-weight: bold!important;
 	}
-	
+
 	.impressao-table-title-3 {
-		font-size: 12px;
-		font-weight: bold;
-		text-decoration: underline;
-		color: blue;
+		font-size: 9px!important;
+		font-weight: bold!important;
 	}
-	
+
 	.impressao-table-title-4 {
-		font-size: 9px;
-		font-weight: normal;
+		font-size: 7px!important;
+		font-weight: normal!important;
 	}
-	
+
 	.impressao-table-title-ul {
-		margin: 0px 0 16px 0;
-		padding: 0px;
+		margin: 0px 0 16px 0!important;
+		padding: 0px!important;
 	}
-	
+
 	.impressao-table-title-ul li {
-		margin: 0px;
-		padding: 0px;
+		margin:0px!important;
+		padding:0px!important;
 	}
-	
+
 	.impressao-table-title-li {
-		display: inline-block;
+		display: inline-block!important;
 	}
-	
+
 	.impressao-table-title-li ul li {
-		font-size: 11px;
+		font-size: 7px!important;
 	}
-	
+
 	.impressao-table-conteudo-tr-1 {
-		padding: 5px;
-		font-family: "Arial"
+		padding: 5px!important;
+		font-family: "Arial"!important
 	}
-	
+
 	.impressao-table-conteudo-tr-1 td {
-		padding: 4px;
-		border: 1px solid #ccc;
-		font-weight: bold;
-		font-size: 10px;
+		padding: 7px!important;
+		border: 1px solid #333!important;
+		font-size: 7px!important;
 	}
-	
+
 	.impressao-table-conteudo-tr-2 {
-		font-family: "Arial"
+		font-family: "Arial"!important
 	}
-	
+
 	.impressao-table-conteudo-tr-2 td {
-		padding: 4px;
-		border: 1px solid #ccc;
-		font-size: 10px;
+		padding: 7px!important;
+		border: 1px solid #333!important;
+		font-size: 7px!important;
+        
 	}
-	
-	clearfix2 {
-		border: 1px solid #999;
+    
+    .impressao-table-analise-cadastrador{
+        font-size: 8px!important;
+    }
+    
+	.clearfix2 {
+	    border: 1px solid #333!important;
 	}
-</style>
-<div class="impressao-container">
+
+	</style>
+
+	<title>Impressão</title>
+</head>
+
+<body>
 	<table class="impressao-table">
 		<tr class="impressao-table-1-tr">
-			<td class="impressao-table-logo">
+			<td class="impressao-table-logo" style="padding: 10px;">
 				<img class="header-logo" src="@{PI.Url.create('Condominio', '/page/logo512.png').toString()}" width="150" height="150">
 			</td>
 			<td class="impressao-table-title">
 				<ul>
-					<li>
-						<div class="impressao-table-title-1">Ficha Cadastral de Condomínio</div>
-						<li>
-							<li>
-								<div class="impressao-table-title-2">NET SERVICE - REDE DE SERVIÇOS LTDA </div>
-								<li>
+					<li><div class="impressao-table-title-1">Ficha Cadastral de Condomínio</div><li>
+						<li><div class="impressao-table-title-2">NET SERVICE - REDE DE SERVIÇOS LTDA </div><li>
+							<li><div class="impressao-table-title-3">zap@zappragas.com.br</div><li>
+							</ul>
+							<ul class="impressao-table-title-ul">
+								<li class="impressao-table-title-li impressao-table-title-2">
+									<ul>
+										<li>DATA DE CADASTRO</li><br>
+										<li>____/____/____</li>
+									</ul>
+								</li>
+
+								<li class="impressao-table-title-li impressao-table-title-2">
+									<ul>
+										<li>ULTIMA CAMPANHA</li><br>
+										<li>____/____/____</li>
+									</ul>
+								</li>
+							</ul>
+
+							<ul class="">
+								<li class="impressao-table-title-4">
+									CADASTRADOR________________________________________________
+								</li>
+
+								<li class="impressao-table-title-4" style="margin-top:20px;">
+									COLABORADOR DO CONDOMÍNIO_________________________________
+								</li>
+							</ul>
+
+						</td>
+					</tr>
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-1">
+							<td style="width: 50%;">NOME COMPLETO DO CONDOMÍNIO<br><br></td>
+							<td style="width: 50%;">TELEFONE DO CONDOMÍNIO/PORTARIA<br><br></td>
+						</tr>
+					</table>
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">ENDEREÇO<br><br></td>
+							<td style="width: 25%;">BAIRRO<br><br></td>
+							<td style="width: 25%;">CIDADE E ESTADO<br><br></td>
+						</tr>
+					</table>
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 75%;">EMAIL DO CONDOMÍBIO<br><br></td>
+							<td style="width: 25%;" >CEP<br><br></td>
+						</tr>
+					</table>
+                    
+					<table class="impressao-table-padrao" style="width:50%; float:left">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td colspan="2">Nº DE APT.<br><br></td>					
+						</tr>
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">ANDARES POR BLOCOS<br><br></td>
+							<td style="width: 50%;">Nº DE BLOCOS<br><br></td>							
+						</tr>
+					</table>
+					<table class="impressao-table-padrao" style="width:50%;">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;padding: 9px;">DISPOSIÇÃO DOS APARTAMENETOS POR ANDAR / BLOCO<br><br><br><br><br><br></td>
+						</tr>
+					</table>
+
+                    <div class="clearfix2"></div>
+                    
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">NOME DO SINDÍCO<br><br></td>
+							<td style="width: 16.6%;">FONE RES.<br><br></td>
+							<td style="width: 16.6%;">FONE COM.<br><br></td>
+							<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>					
+						</tr>
+					</table>
+
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">EMAIL DO SINDICO<br><br></td>
+							<td style="width: 50%;">APT DO SINDICO<br><br></td>
+						</tr>
+					</table>
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">ZELADOR / ENCARREGADO<br><br></td>
+							<td style="width: 16.6%;">FONE RES.<br><br></td>
+							<td style="width: 16.6%;">FONE COM.<br><br></td>
+							<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>
+						</tr>
+					</table>
+
+
+					<!-- ------ -->
+					<div class="clearfix2"></div>
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">NOME DA ADMINISTRATORA<br><br></td>
+							<td>TELEFONE DA ADMINISTRADORA<br><br></td>					
+						</tr>
+					</table>
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">ENDEREÇO (Rua, Quadra, Lote, Número)<br><br></td>
+							<td style="width: 25%;">BAIRRO<br><br></td>
+							<td style="width: 25%;">CIDADE/ESTADO<br><br></td>
+						</tr>
+					</table>
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">EMAIL DA ADMINISTRADORA<br><br></td>
+							<td>CEP<br><br></td>					
+						</tr>
+					</table>
+
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="width: 50%;">REPRESENTANTE DA ADMINISTRADORA<br><br></td>
+							<td style="width: 16.6%;">FONE RES.<br><br></td>
+							<td style="width: 16.6%;">FONE COM.<br><br></td>
+							<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>
+						</tr>
+					</table>
+
+					<div class="clearfix2"></div>			
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td class="impressao-table-analise-cadastrador">
+								<ul>
 									<li>
-										<div class="impressao-table-title-3">zap@zappragas.com.br</div>
-										<li>
-				</ul>
-				<ul class="impressao-table-title-ul">
-					<li class="impressao-table-title-li impressao-table-title-2">
-						<ul>
-							<li>DATA DE CADASTRO</li><br>
-							<li>____/____/____</li>
-						</ul>
-					</li>
-
-					<li class="impressao-table-title-li impressao-table-title-2">
-						<ul>
-							<li>ULTIMA CAMPANHA</li><br>
-							<li>____/____/____</li>
-						</ul>
-					</li>
-				</ul>
-
-				<ul class="">
-					<li class="impressao-table-title-4">
-						CADASTRADOR________________________________________________
-					</li>
-
-					<li class="impressao-table-title-4" style="margin-top:20px;">
-						COLABORADOR DO CONDOMÍNIO_________________________________
-					</li>
-				</ul>
-
-			</td>
-		</tr>
-
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-1">
-				<td style="width: 50%;">NOME COMPLETO DO CONDOMÍNIO<br><br></td>
-				<td style="width: 50%;">TELEFONE DO CONDOMÍNIO/PORTARIA<br><br></td>
-			</tr>
-		</table>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50%;">ENDEREÇO<br><br></td>
-				<td style="width: 25%;">BAIRRO<br><br></td>
-				<td style="width: 25%;">CIDADE E ESTADO<br><br></td>
-			</tr>
-		</table>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 75%;">EMAIL DO CONDOMÍBIO<br><br></td>
-				<td style="width: 25%;">CEP<br><br></td>
-			</tr>
-		</table>
-
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 17%;">Nº DE APT.<br><br></td>
-				<td style="width: 17%;">Nº DE BLOCOS<br><br></td>
-				<td style="width: 16%;">ANDARES POR BLOCOS<br><br></td>
-				<td style="width: 65%;">DISPOSIÇÃO DOS APARTAMENETOS POR ANDAR / BLOCO<br><br></td>
-			</tr>
-		</table>
-
-		<div class="clearfix2"></div>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50.3%;">NOME DO SINDÍCO<br><br></td>
-				<td style="width: 16.6%;">FONE RES.<br><br></td>
-				<td style="width: 16.6%;">FONE COM.<br><br></td>
-				<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>
-			</tr>
-		</table>
+										ANÁLISE DO CADASTRADOR</br></br>
+									</li>
+									<li >
+										(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Aparência Estrutural (0-10)</br></br>
+									</li>
+									<li>
+										(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Classe:(A B C)</br></br>
+									</li>
+									<li>
+										(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Avaliação do Cadastrador (0-10) Por quê? </br></br></br>
+										________________________________________________________________________________________________________</br></br></br>
+										________________________________________________________________________________________________________</br></br></br>
+										________________________________________________________________________________________________________</br>
+									</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					
+					<div class="clearfix2"></div>
+					<table class="impressao-table-padrao">
+						<tr class="impressao-table-conteudo-tr-2">
+							<td style="padding: 15px 0px 80px 15px; width: 100%;">OUTRAS OBSERVAÇÕES<br><br></td>
+						</tr>
+					</table>
 
 
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50%;">EMAIL DO SINDICO<br><br></td>
-				<td style="width: 50%;">APT DO SINDICO<br><br></td>
-			</tr>
-		</table>
 
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50.3%;">ZELADOR / ENCARREGADO<br><br></td>
-				<td style="width: 16.6%;">FONE RES.<br><br></td>
-				<td style="width: 16.6%;">FONE COM.<br><br></td>
-				<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>
-			</tr>
-		</table>
-
-
-		<!-- ------ -->
-		<div class="clearfix2"></div>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50%;">NOME DA ADMINISTRATORA<br><br></td>
-				<td>TELEFONE DA ADMINISTRADORA<br><br></td>
-			</tr>
-		</table>
-
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50%;">ENDEREÇO (Rua, Quadra, Lote, Número)<br><br></td>
-				<td style="width: 25%;">BAIRRO<br><br></td>
-				<td style="width: 25%;">CIDADE/ESTADO<br><br></td>
-			</tr>
-		</table>
-
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50%;">EMAIL DA ADMINISTRADORA<br><br></td>
-				<td>CEP<br><br></td>
-			</tr>
-		</table>
-
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="width: 50.3%;">REPRESENTANTE DA ADMINISTRADORA<br><br></td>
-				<td style="width: 16.6%;">FONE RES.<br><br></td>
-				<td style="width: 16.6%;">FONE COM.<br><br></td>
-				<td style="width: 16.6%;">CEL./WHATSAPP<br><br></td>
-			</tr>
-		</table>
-
-		<div class="clearfix2"></div>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td class="impressao-table-analise-cadastrador">
-					<ul>
-						<li>
-							ANÁLISE DO CADASTRADOR</br>
-							</br>
-						</li>
-						<li>
-							(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Aparência Estrutural (0-10)</br>
-							</br>
-						</li>
-						<li>
-							(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Classe:(A B C)</br>
-							</br>
-						</li>
-						<li>
-							(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp) Avaliação do Cadastrador (0-10) Por quê? </br>
-							</br>
-							</br>
-							_________________________________________________________________________________________________________</br>
-							</br>
-							</br>
-							_________________________________________________________________________________________________________</br>
-							</br>
-							</br>
-							_________________________________________________________________________________________________________</br>
-						</li>
-					</ul>
-				</td>
-			</tr>
-		</table>
-
-		<div class="clearfix2"></div>
-		<table class="impressao-table-padrao">
-			<tr class="impressao-table-conteudo-tr-2">
-				<td style="padding: 15px 0px 50px 15px; width: 100%;">OUTRAS OBSERVAÇÕES<br><br></td>
-			</tr>
-		</table>
-</div>
+				</body>
+				</html>
